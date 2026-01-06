@@ -74,7 +74,7 @@ Complete installation and configuration guide for the Obsidian + Claude workflow
 cd ~/Documents/
 
 # Clone the repository
-git clone https://github.com/yourusername/obsidian-claude-workflow.git
+git clone https://github.com/alassetter/obsidian-claude-workflow.git
 
 # Navigate into the vault
 cd obsidian-claude-workflow
@@ -82,7 +82,7 @@ cd obsidian-claude-workflow
 
 **Option B: Download ZIP**
 
-1. Go to https://github.com/yourusername/obsidian-claude-workflow
+1. Go to https://github.com/alassetter/obsidian-claude-workflow
 2. Click "Code" → "Download ZIP"
 3. Extract to your desired location
 4. Rename folder if needed
@@ -399,7 +399,7 @@ Should:
 ### Still Having Issues?
 
 1. Check [README.md](README.md) for common issues
-2. Search [GitHub Issues](https://github.com/yourusername/obsidian-claude-workflow/issues)
+2. Search [GitHub Issues](https://github.com/alassetter/obsidian-claude-workflow/issues)
 3. Create new issue with:
    - Your OS
    - Obsidian version

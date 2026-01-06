@@ -366,14 +366,3 @@ Inspired by:
 
 ---
 
-## 💬 Community & Support
-
-- **Issues:** [GitHub Issues](https://github.com/yourusername/obsidian-claude-workflow/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/obsidian-claude-workflow/discussions)
-- **Questions:** Open a discussion or issue
-
----
-
-**Built by knowledge workers, for knowledge workers.**
-
-*Stop fighting your tools. Start flowing with them.* ✨
