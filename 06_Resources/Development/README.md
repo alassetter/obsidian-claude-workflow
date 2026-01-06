@@ -17,5 +17,5 @@ This folder contains language-specific references and framework documentation.
 
 ## Cross-Domain Resource
 This is general development knowledge. For project-specific development, see:
-- `03_Company_CompanyB/Documentation/` for CompanyB architecture
+- `03_Company_ExampleB/Documentation/` for ExampleB architecture
 - `04_Development/Documentation/` for your personal learning notes

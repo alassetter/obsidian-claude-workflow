@@ -1,6 +1,6 @@
 ---
 type: task
-domain: [CompanyA | CompanyB | XYZ | Development]
+domain: [ExampleA | ExampleB | ExampleC | Development]
 status: [todo | in-progress | blocked | completed]
 priority: [low | medium | high | urgent]
 created: {{date}}

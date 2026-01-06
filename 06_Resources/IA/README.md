@@ -17,4 +17,4 @@ This folder contains IA methodologies, navigation patterns, and UX structure res
 
 ## Cross-Domain Resource
 This is general IA knowledge. For project-specific IA work, see:
-- `01_Clients/XYZ/Documentation/` for XYZ IA decisions
+- `01_Clients/ExampleC/Documentation/` for ExampleC IA decisions

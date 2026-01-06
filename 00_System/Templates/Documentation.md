@@ -1,6 +1,6 @@
 ---
 type: documentation
-domain: [CompanyA | CompanyB | XYZ | Development | General]
+domain: [ExampleA | ExampleB | ExampleC | Development | General]
 category: [AI | Shopify | Development | IA | DevOps | Design | HowTos | Process]
 topic: 
 created: {{date}}

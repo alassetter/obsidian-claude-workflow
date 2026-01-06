@@ -19,5 +19,5 @@ This folder contains general process guides and tutorials that don't fit specifi
 ## Cross-Domain Resource
 This is general knowledge. For domain-specific processes, see:
 - `01_Clients/[Client]/Documentation/` for client-specific processes
-- `02_Company_CompanyA/Documentation/` for CompanyA processes
-- `03_Company_CompanyB/Documentation/` for CompanyB processes
+- `02_Company_ExampleA/Documentation/` for ExampleA processes
+- `03_Company_ExampleB/Documentation/` for ExampleB processes

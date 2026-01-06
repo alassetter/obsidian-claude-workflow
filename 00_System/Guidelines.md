@@ -32,7 +32,7 @@ DomainName/
   AI_Usage_Guide.md
 
 01_Clients/
-  XYZ/
+  ExampleC/
     Planning/
     Tasks/
     Documentation/
@@ -41,7 +41,7 @@ DomainName/
     Knowledge_Base.md
     Project_Context.md
 
-02_Company_CompanyA/
+02_Company_ExampleA/
   Planning/
   Tasks/
   Documentation/
@@ -52,7 +52,7 @@ DomainName/
   Company_Overview.md
   Project_Context.md
 
-03_Company_CompanyB/
+03_Company_ExampleB/
   Planning/
   Tasks/
   Documentation/
@@ -95,7 +95,7 @@ DomainName/
 ## Client Structure Example
 
 ```
-01_Clients/XYZ/
+01_Clients/ExampleC/
   Planning/
     2026-Q1-Intranet-Redesign.md
     Content-Migration-Plan.md
@@ -121,7 +121,7 @@ DomainName/
 ## Company Structure Example
 
 ```
-02_Company_CompanyA/
+02_Company_ExampleA/
   Planning/
     2026-Product-Launch.md
     Fall-Marketing-Campaign.md
@@ -293,9 +293,9 @@ Every domain MUST have a `Project_Context.md` file. This is Claude's entry point
 
 **Location:** Root of each domain folder
 **Examples:**
-- `01_Clients/XYZ/Project_Context.md`
-- `02_Company_CompanyA/Project_Context.md`
-- `03_Company_CompanyB/Project_Context.md`
+- `01_Clients/ExampleC/Project_Context.md`
+- `02_Company_ExampleA/Project_Context.md`
+- `03_Company_ExampleB/Project_Context.md`
 - `04_Development/Project_Context.md`
 
 ## README Files

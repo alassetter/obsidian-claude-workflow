@@ -1,6 +1,6 @@
 ---
 type: planning
-domain: [CompanyA | CompanyB | XYZ | Development]
+domain: [ExampleA | ExampleB | ExampleC | Development]
 created: {{date}}
 status: active
 related_tasks: []

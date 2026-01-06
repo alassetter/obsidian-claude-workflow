@@ -16,22 +16,22 @@ Rewrite content in a specific style or voice, optimized for the domain.
 **Process:**
 
 1. **Identify context:**
-   - What domain is this for? (CompanyA, XYZ, CompanyB, General)
+   - What domain is this for? (ExampleA, ExampleC, ExampleB, General)
    - What type of content? (product description, technical doc, client communication, etc.)
    - What style? (professional, casual, technical, marketing, brand-specific)
 
 2. **Load relevant guidelines:**
    
-   **If CompanyA:**
-   - Read `02_Company_CompanyA/Documentation/Brand-Voice-Guidelines.md` (if exists)
+   **If ExampleA:**
+   - Read `02_Company_ExampleA/Documentation/Brand-Voice-Guidelines.md` (if exists)
    - Style: Western authenticity, rugged yet accessible, quality-focused
    
-   **If XYZ:**
-   - Read `01_Clients/XYZ/Documentation/Brand-Guidelines.md` (if exists)
+   **If ExampleC:**
+   - Read `01_Clients/ExampleC/Documentation/Brand-Guidelines.md` (if exists)
    - Style: Professional, clear, enterprise-appropriate
    
-   **If CompanyB:**
-   - Read `03_Company_CompanyB/Documentation/` relevant docs
+   **If ExampleB:**
+   - Read `03_Company_ExampleB/Documentation/` relevant docs
    - Style: Technical but user-friendly, real estate context
    
    **If General/Professional:**
@@ -63,7 +63,7 @@ Rewrite content in a specific style or voice, optimized for the domain.
    - Compelling calls-to-action
    - Emotional appeal where appropriate
    
-   **CompanyA Brand:**
+   **ExampleA Brand:**
    - Authentic western heritage
    - Quality and craftsmanship emphasis
    - Confident but not boastful
@@ -94,29 +94,29 @@ User says:
 - `/rewrite`
 - `/rewrite [style]`
 - "Rewrite this professionally"
-- "Make this sound like CompanyA"
-- "Polish this for XYZ"
+- "Make this sound like ExampleA"
+- "Polish this for ExampleC"
 - "Make this more casual"
 
 ## Variables
 
-- `{{style}}`: professional | casual | technical | marketing | CompanyA | XYZ
+- `{{style}}`: professional | casual | technical | marketing | examplea | examplec
 - `{{content}}`: The text to rewrite (user provides or references)
 
 ## Examples
 
-### Example 1: Product Description (CompanyA)
+### Example 1: Product Description (ExampleA)
 
 **Original:**
 ```
 This hat is really nice. Made from good quality felt. Comes in brown. Pretty comfortable to wear all day.
 ```
 
-**User:** `/rewrite CompanyA`
+**User:** `/rewrite examplea`
 
 **Output:**
 ```
-**Rewritten (CompanyA Brand Voice):**
+**Rewritten (ExampleA Brand Voice):**
 
 This premium felt hat embodies classic Western craftsmanship. Hand-shaped from superior quality wool felt, it delivers both authentic style and all-day comfort. Available in rich brown that only gets better with wear. Whether you're working the range or heading into town, this is the hat that goes the distance.
 
@@ -201,7 +201,7 @@ Our software helps real estate agents. It has lots of features. You should try i
 ```
 **Rewritten (Marketing):**
 
-Transform your real estate business with CompanyB—the property management platform designed specifically for agents who demand more.
+Transform your real estate business with ExampleB—the property management platform designed specifically for agents who demand more.
 
 Close deals faster with instant property insights, automated client communications, and market analytics that keep you ahead of the competition. Join thousands of successful agents who've already made the switch.
 
@@ -224,7 +224,7 @@ Close deals faster with instant property insights, automated client communicatio
 ## Related Prompts
 
 - [[Professional_Writer]] - General professional writing
-- [[Product_Description]] - CompanyA product writing
+- [[Product_Description]] - ExampleA product writing
 - [[Content_Rewrite]] - Content-specific rewriting (if exists)
 
 ## Notes

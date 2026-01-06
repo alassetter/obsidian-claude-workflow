@@ -11,5 +11,5 @@ This folder contains Shopify API documentation, how-tos, and technical reference
 - App integration guides
 
 ## Cross-Domain Resource
-This is NOT domain-specific. For CompanyA Shopify workflows, see:
-- `02_Company_CompanyA/Documentation/` for CompanyA-specific Shopify processes
+This is NOT domain-specific. For ExampleA Shopify workflows, see:
+- `02_Company_ExampleA/Documentation/` for ExampleA-specific Shopify processes

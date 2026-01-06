@@ -1,0 +1,5 @@
+# ExampleB Documentation
+
+This folder contains ExampleB architecture decisions, technical documentation, and development processes.
+
+Use the Documentation template from `00_System/Templates/` to create new documentation.

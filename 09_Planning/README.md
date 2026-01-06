@@ -16,18 +16,18 @@ This is your **planning inbox** - the central place where you brain dump everyth
 1. Say: `/organize`
 2. Claude reads your inbox
 3. Creates proper task files in the right domains:
-   - CompanyA tasks → `02_Company_CompanyA/Tasks/`
-   - XYZ tasks → `01_Clients/XYZ/Tasks/`
-   - CompanyB tasks → `03_Company_CompanyB/Tasks/`
+   - ExampleA tasks → `02_Company_ExampleA/Tasks/`
+   - ExampleC tasks → `01_Clients/ExampleC/Tasks/`
+   - ExampleB tasks → `03_Company_ExampleB/Tasks/`
    - Dev learning → `04_Development/Tasks/`
 4. Claude asks if you want to archive the inbox
 
 ### What Goes in the Inbox
 
 **Everything! Examples:**
-- "Need to update 10 product descriptions for CompanyA"
-- "XYZ wants IA review meeting prep"
-- "Continue CompanyB user dashboard"
+- "Need to update 10 product descriptions for ExampleA"
+- "ExampleC wants IA review meeting prep"
+- "Continue ExampleB user dashboard"
 - "Research letta.com for memory management"
 - "Review that Shopify analytics report"
 - "Learn how to use Claude skills"
@@ -69,14 +69,14 @@ Claude will figure all that out when you run `/organize`.
 **Brain Dump Format:**
 Just write naturally! These all work:
 ```
-Tomorrow: CompanyA product descriptions, XYZ nav review
+Tomorrow: ExampleA product descriptions, ExampleC nav review
 
 Need to:
 - Update product photos
-- Review CompanyB auth system
-- Schedule XYZ meeting
+- Review ExampleB auth system
+- Schedule ExampleC meeting
 
-Random thoughts: Maybe integrate Shopify data into CompanyB?
+Random thoughts: Maybe integrate Shopify data into ExampleB?
 ```
 
 **Cross-Domain Tasks:**
