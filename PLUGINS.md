@@ -212,7 +212,7 @@ Create templates that auto-fill:
 **When you'd use it:**
 ```dataview
 TABLE priority, status, due_date
-FROM "02_Company_CompanyA/Tasks"
+FROM "02_Company_ExampleA/Tasks"
 WHERE status != "completed"
 SORT priority DESC
 ```

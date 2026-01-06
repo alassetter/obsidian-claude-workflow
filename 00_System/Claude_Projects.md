@@ -15,21 +15,21 @@ When you switch domains in your work, you should switch Claude Desktop projects 
 
 | Vault Domain | Claude Desktop Project | Purpose |
 |--------------|----------------------|---------|
-| 02_Company_CompanyA | **CompanyA Shopify** | Shopify operations, products, B2C/B2B |
-| 01_Clients/XYZ | **XYZ** | Enterprise intranet, IA, content |
-| 03_Company_CompanyB | **company-b** | Real estate software development |
+| 02_Company_ExampleA | **ExampleA Shopify** | Shopify operations, products, B2C/B2B |
+| 01_Clients/ExampleC | **ExampleC** | Enterprise intranet, IA, content |
+| 03_Company_ExampleB | **exampleb** | Real estate software development |
 | 04_Development | **ClaudeKit** | Learning, experiments, skill building |
 
-*Note: "Cowboy Cool" (separate from Shopify) may be for general business/marketing work - clarify usage as needed.*
+*Note: ExampleA Shopify project handles Shopify operations for ExampleA.*
 
 ## 🔄 Switching Workflow
 
 ### When Claude Tells You to Switch
 
 ```
-You: /load CompanyA
+You: /load examplea
 
-Claude: "Switch to Claude Desktop project: 'CompanyA Shopify'
+Claude: "Switch to Claude Desktop project: 'ExampleA Shopify'
          
          Context loaded:
          - Last worked on: Product descriptions
@@ -38,7 +38,7 @@ Claude: "Switch to Claude Desktop project: 'CompanyA Shopify'
          
          What do you want to work on?"
 
-You: [Switch to "CompanyA Shopify" project in Claude Desktop]
+You: [Switch to "ExampleA Shopify" project in Claude Desktop]
      [Continue conversation with full context + Shopify MCP]
 ```
 
@@ -52,10 +52,10 @@ When you start working on a specific domain:
 
 ## 🔧 MCP Servers Per Project
 
-### CompanyA Shopify
+### ExampleA Shopify
 **Available MCP Servers:**
 - Shopify MCP - Product management, orders, inventory
-- Filesystem MCP - Access to CompanyA files
+- Filesystem MCP - Access to ExampleA files
 - Git MCP - Version control
 - Obsidian MCP - This vault
 
@@ -65,11 +65,11 @@ When you start working on a specific domain:
 - Order management
 - Marketing copy generation
 
-### XYZ
+### ExampleC
 **Available MCP Servers:**
-- Filesystem MCP - Access to XYZ files
+- Filesystem MCP - Access to ExampleC files
 - Obsidian MCP - This vault
-- (Add Google Drive MCP if needed for XYZ docs)
+- (Add Google Drive MCP if needed for ExampleC docs)
 
 **Common Tasks:**
 - Content rewriting
@@ -77,7 +77,7 @@ When you start working on a specific domain:
 - Meeting prep
 - Documentation organization
 
-### company-b (CompanyB)
+### exampleb (ExampleB)
 **Available MCP Servers:**
 - Filesystem MCP - Access to code repositories
 - Git MCP - Version control
@@ -114,23 +114,23 @@ For each Claude Desktop project, ensure:
 
 ## 🔗 Quick Links
 
-### CompanyA Shopify
-- Vault: `02_Company_CompanyA/`
-- Context: `02_Company_CompanyA/Project_Context.md`
-- Tasks: `02_Company_CompanyA/Tasks/`
-- Docs: `02_Company_CompanyA/Documentation/`
+### ExampleA Shopify
+- Vault: `02_Company_ExampleA/`
+- Context: `02_Company_ExampleA/Project_Context.md`
+- Tasks: `02_Company_ExampleA/Tasks/`
+- Docs: `02_Company_ExampleA/Documentation/`
 
-### XYZ
-- Vault: `01_Clients/XYZ/`
-- Context: `01_Clients/XYZ/Project_Context.md`
-- Tasks: `01_Clients/XYZ/Tasks/`
-- Docs: `01_Clients/XYZ/Documentation/`
+### ExampleC
+- Vault: `01_Clients/ExampleC/`
+- Context: `01_Clients/ExampleC/Project_Context.md`
+- Tasks: `01_Clients/ExampleC/Tasks/`
+- Docs: `01_Clients/ExampleC/Documentation/`
 
-### company-b (CompanyB)
-- Vault: `03_Company_CompanyB/`
-- Context: `03_Company_CompanyB/Project_Context.md`
-- Tasks: `03_Company_CompanyB/Tasks/`
-- Docs: `03_Company_CompanyB/Documentation/`
+### exampleb (ExampleB)
+- Vault: `03_Company_ExampleB/`
+- Context: `03_Company_ExampleB/Project_Context.md`
+- Tasks: `03_Company_ExampleB/Tasks/`
+- Docs: `03_Company_ExampleB/Documentation/`
 
 ### ClaudeKit (Development)
 - Vault: `04_Development/`
@@ -158,16 +158,16 @@ For each Claude Desktop project, ensure:
 - Checkpoints help you resume in each context
 
 **MCP Server Issues:**
-- If Claude can't access Shopify: Check you're in "CompanyA Shopify" project
+- If Claude can't access Shopify: Check you're in "ExampleA Shopify" project
 - If Claude can't see files: Check filesystem MCP is configured
 - If Obsidian isn't working: Check MCP connection in all projects
 
 ## 🚧 To Be Configured
 
 These items need setup (circle back later):
-- [ ] Confirm which "Cowboy Cool" project is for what
+- [ ] Confirm which ExampleA project is for what
 - [ ] Document specific MCP servers in each project
-- [ ] Add Google Drive MCP for XYZ if needed
+- [ ] Add Google Drive MCP for ExampleC if needed
 - [ ] Test context loading in each project
 - [ ] Add custom instructions to each project
 

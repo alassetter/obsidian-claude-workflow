@@ -25,10 +25,10 @@ A production-ready knowledge management and task workflow system integrating Obs
 
 ### Daily Workflow Commands
 ```bash
-/inbox ppfa create employment page      # Quick capture (no file opening!)
+/inbox examplec create employment page      # Quick capture (no file opening!)
 /organize                               # Process inbox → structured tasks
 /dashboard                              # Beautiful HTML task overview
-/load cowboycool                        # Load full domain context
+/load examplea                        # Load full domain context
 /tasks priority:high                    # Show filtered tasks
 /checkpoint                             # Save work state before switching
 ```
@@ -142,12 +142,12 @@ See [Quick_Reference.md](00_System/Quick_Reference.md) for complete documentatio
 ## 🏷️ Domain Shortcuts
 
 Use full names or shortcuts:
-- **CowboyCool** → `cc`
-- **AxiomOne** → `ax`
-- **PPFA** → `ppfa`
+- **ExampleA** → `ea`
+- **ExampleB** → `eb`
+- **ExampleC** → `examplec`
 - **Development** → `dev`
 
-Example: `/load cc` = `/load cowboycool`
+Example: `/load ea` = `/load examplea`
 
 ---
 
@@ -156,21 +156,21 @@ Example: `/load cc` = `/load cowboycool`
 ### Morning
 ```bash
 /dashboard              # See what's urgent, what's blocked
-/load ppfa             # Dive into most urgent domain
+/load examplec             # Dive into most urgent domain
 ```
 
 ### Throughout Day
 ```bash
-/inbox ppfa prep meeting tomorrow
-/inbox cc update product descriptions
+/inbox examplec prep meeting tomorrow
+/inbox ea update product descriptions
 /inbox research new AI tools
 # Keep working, capture as you go
 ```
 
 ### Context Switching
 ```bash
-/checkpoint            # Save PPFA work state
-/load cowboycool      # Switch to CowboyCool
+/checkpoint            # Save ExampleC work state
+/load examplea      # Switch to ExampleA
 # Claude shows where you left off
 ```
 

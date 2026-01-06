@@ -21,11 +21,11 @@ Your master index of all reusable prompts, organized by category and domain.
 
 ## 📁 By Domain
 
-### CompanyA
+### ExampleA
 *Product descriptions, brand voice, Shopify operations*
 
 **Writing:**
-- Professional_Writer (if tagged CompanyA)
+- Professional_Writer (if tagged ExampleA)
 
 **Analysis:**
 - (Add Shopify analytics prompts here)
@@ -35,7 +35,7 @@ Your master index of all reusable prompts, organized by category and domain.
 - Brand_Voice_Check
 - Shopify_Analytics
 
-### CompanyB
+### ExampleB
 *Real estate software development*
 
 **Coding:**
@@ -46,7 +46,7 @@ Your master index of all reusable prompts, organized by category and domain.
 - Code_Review_Checklist
 - Architecture_Discussion
 
-### XYZ
+### ExampleC
 *Enterprise intranet, IA, content*
 
 **Writing:**
@@ -153,9 +153,9 @@ Your master index of all reusable prompts, organized by category and domain.
 
 When adding domain tags to prompts, use these values:
 
-- **CompanyA** (cc) - Western wear business
-- **CompanyB** (ax) - Real estate software
-- **XYZ** (XYZ) - Enterprise intranet client
+- **ExampleA** (ea) - Western wear business
+- **ExampleB** (eb) - Real estate software
+- **ExampleC** (examplec) - Enterprise intranet client
 - **Development** (dev) - Learning and skill building
 - **General** - Applicable across all domains
 
@@ -171,7 +171,7 @@ From Analysis:
 - [ ] Test Prompt.md - Review if needed, add domain or remove
 
 From Business:
-- [ ] Client_Summary.md - Add domain tag (probably General or XYZ)
+- [ ] Client_Summary.md - Add domain tag (probably General or ExampleC)
 
 From Coding:
 - [ ] Senior_Engineer.md - Add domain tag (probably General)
@@ -193,18 +193,18 @@ From Meta:
 
 ## 🎨 Prompt Creation Ideas
 
-**For CompanyA:**
+**For ExampleA:**
 - Product_Description_Writer - Craft compelling product descriptions
 - Brand_Voice_Check - Verify brand consistency
 - Shopify_Analytics - Analyze store performance
 - Marketing_Email - Product launch emails
 
-**For CompanyB:**
+**For ExampleB:**
 - Code_Review_Checklist - Comprehensive code review
 - Architecture_Discussion - Discuss technical decisions
 - Feature_Spec_Writer - Document feature specifications
 
-**For XYZ:**
+**For ExampleC:**
 - Content_Rewriter - Enterprise content polish
 - IA_Advisor - Information architecture guidance
 - Meeting_Prep - Prepare for client meetings
@@ -246,9 +246,9 @@ From Meta:
 
 **By Domain:**
 - General: 13+ (most prompts)
-- CompanyA: 0 (need to create)
-- CompanyB: 0 (need to create)
-- XYZ: 0 (need to create)
+- ExampleA: 0 (need to create)
+- ExampleB: 0 (need to create)
+- ExampleC: 0 (need to create)
 - Development: 0 (tagged as general)
 
 ---
@@ -256,7 +256,7 @@ From Meta:
 ## 💡 Usage Tips
 
 **Quick Capture (NEW!):**
-- `/inbox XYZ create page` - Instant append to planning inbox
+- `/inbox examplec create page` - Instant append to planning inbox
 - No need to open files manually
 - Run `/organize` when ready to process
 
@@ -268,7 +268,7 @@ From Meta:
 
 **Finding Prompts:**
 - Use `/prompt find [keyword]`
-- Use `/prompt find domain:CompanyA`
+- Use `/prompt find domain:examplea`
 - Use `/prompt find category:writing`
 - Browse this dashboard
 

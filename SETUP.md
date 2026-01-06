@@ -148,13 +148,13 @@ See [PLUGINS.md](PLUGINS.md) for the full list and installation instructions.
 
 You'll create multiple Claude Desktop projects, one per domain:
 
-**For each domain (CompanyA, CompanyB, XYZ, Development):**
+**For each domain (ExampleA, ExampleB, ExampleC, Development):**
 
 1. In Claude Desktop, click "New Project"
 2. Name it according to domain:
-   - `CompanyA Shopify` (for CompanyA)
-   - `company-b` (for CompanyB)
-   - `XYZ` (for XYZ)
+   - `ExampleA Shopify` (for ExampleA)
+   - `exampleb` (for ExampleB)
+   - `ExampleC` (for ExampleC)
    - `ClaudeKit` (for Development)
 3. Add custom instructions (see next section)
 4. Configure MCP servers (see MCP section)
@@ -219,21 +219,21 @@ pip install obsidian-mcp
 
 For each Claude Desktop project, set the working directory to the appropriate domain folder:
 
-**CompanyA Shopify:**
+**ExampleA Shopify:**
 ```json
 "filesystem": {
   "command": "npx",
   "args": ["-y", "@modelcontextprotocol/server-filesystem", 
-           "/path/to/obsidian-claude-workflow/02_Company_CompanyA"]
+           "/path/to/obsidian-claude-workflow/02_Company_ExampleA"]
 }
 ```
 
-**XYZ:**
+**ExampleC:**
 ```json
 "filesystem": {
   "command": "npx",
   "args": ["-y", "@modelcontextprotocol/server-filesystem",
-           "/path/to/obsidian-claude-workflow/01_Clients/XYZ"]
+           "/path/to/obsidian-claude-workflow/01_Clients/ExampleC"]
 }
 ```
 
@@ -256,7 +256,7 @@ If you have a Shopify store:
 }
 ```
 
-Only add to relevant projects (e.g., "CompanyA Shopify")
+Only add to relevant projects (e.g., "ExampleA Shopify")
 
 ### Step 5: Restart Claude Desktop
 

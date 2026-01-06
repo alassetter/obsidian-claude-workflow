@@ -14,7 +14,7 @@ status: in-progress
 
 **Chunk 1: Core Folder Structure (COMPLETE)**
 - Created Planning/Tasks/Documentation for all domains
-- XYZ, CompanyA, CompanyB, Development
+- ExampleC, ExampleA, ExampleB, Development
 - All folders have README files
 
 **Chunk 2: Resources Folder Structure (COMPLETE)**
@@ -114,16 +114,16 @@ status: in-progress
 - `/help` - Get help
 
 **Domain Shortcuts:**
-- cc = CompanyA
-- ax = CompanyB
-- XYZ = XYZ
+- ea = ExampleA
+- eb = ExampleB
+- examplec = ExampleC
 - dev = Development
 
 ## Remaining Chunks (9-10)
 
 **Chunk 9: Project Context Files**
 - Create Project_Context.md for each domain
-- CompanyA, CompanyB, XYZ, Development
+- ExampleA, ExampleB, ExampleC, Development
 - Fill with initial context (needs user input)
 
 **Chunk 10: Final Testing & Documentation**
@@ -147,9 +147,9 @@ status: in-progress
    - Review Knowledge_Extractor, Project_Advisor, etc.
    - Tag with appropriate domains
 5. **Create domain-specific prompts:**
-   - CompanyA product descriptions
-   - CompanyB code review
-   - XYZ content workflows
+   - ExampleA product descriptions
+   - ExampleB code review
+   - ExampleC content workflows
 
 ## User Preferences Captured
 
@@ -159,21 +159,21 @@ status: in-progress
 - **Keep everything** - Archive, don't delete
 - **No repetition** - Prompts eliminate re-explaining
 - **Hybrid prompt organization** - Categories + domain tags
-- **Simple commands** - `/organize CompanyA` not complex syntax
-- **Domain shortcuts** - cc, ax, XYZ, dev
+- **Simple commands** - `/organize examplea` not complex syntax
+- **Domain shortcuts** - ea, eb, examplec, dev
 
 ## Outstanding Questions
 
 **For Future Sessions:**
-1. CompanyA details:
+1. ExampleA details:
    - Product lines, collections
    - Brand voice specifics
    - Common workflows
-2. CompanyB details:
+2. ExampleB details:
    - Tech stack specifics
    - Current development phase
    - Team structure
-3. XYZ details:
+3. ExampleC details:
    - Project phase
    - Content approval workflow
    - Key stakeholders
@@ -210,7 +210,7 @@ Say: "Continue with Chunk 9" or "Let's fill in Project Context files"
 Or just start using the system! Try:
 1. Dump some tasks in 09_Planning/inbox.md
 2. Run `/organize` to see it work
-3. Use `/load CompanyA` to load context
+3. Use `/load examplea` to load context
 
 ## Key Achievements Today
 

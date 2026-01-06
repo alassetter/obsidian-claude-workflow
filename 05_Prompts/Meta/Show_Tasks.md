@@ -18,7 +18,7 @@ You have Obsidian MCP access. Show active tasks for a domain or all domains.
 1. **Determine scope:**
    - `/tasks` = all domains
    - `/tasks [domain]` = specific domain only
-   - Accept shortcuts: cc, ax, XYZ, dev
+   - Accept shortcuts: ea, eb, examplec, dev
 
 2. **Read task files:**
    - List all `.md` files in `[domain]/Tasks/` folders
@@ -71,7 +71,7 @@ User says:
 - `/tasks [domain]`
 - "Show my tasks"
 - "What do I need to work on?"
-- "List CompanyA tasks"
+- "List ExampleA tasks"
 - "What's on my plate?"
 
 ## Variables
@@ -89,32 +89,32 @@ User says:
 **Output:**
 ```
 ## BLOCKED (1)
-[CompanyB] user-dashboard-authentication - Build user dashboard auth system - Blocker: Waiting on OAuth config
+[ExampleB] user-dashboard-authentication - Build user dashboard auth system - Blocker: Waiting on OAuth config
 
 ## IN PROGRESS (2)
-[CompanyA] update-product-descriptions - Update 10 fall collection products
-[XYZ] prepare-ia-review-meeting - Prep IA review presentation - Due: 2026-01-10
+[ExampleA] update-product-descriptions - Update 10 fall collection products
+[ExampleC] prepare-ia-review-meeting - Prep IA review presentation - Due: 2026-01-10
 
 ## TODO - High (4)
-[CompanyA] optimize-product-images - Optimize fall collection imagery
-[XYZ] review-navigation-structure - Review and provide feedback on nav
-[CompanyB] property-search-ui - Build property search interface
-[CompanyA] shopify-inventory-audit - Audit inventory levels
+[ExampleA] optimize-product-images - Optimize fall collection imagery
+[ExampleC] review-navigation-structure - Review and provide feedback on nav
+[ExampleB] property-search-ui - Build property search interface
+[ExampleA] shopify-inventory-audit - Audit inventory levels
 
 ## TODO - Medium (3)
-[CompanyA] review-abandoned-carts - Analyze cart abandonment
-[CompanyB] database-schema-review - Review database design
+[ExampleA] review-abandoned-carts - Analyze cart abandonment
+[ExampleB] database-schema-review - Review database design
 [Development] learn-claude-skills - Learn Claude skills system
 
 ---
 Total: 10 tasks (1 blocked, 2 in progress, 7 todo)
 
-Focus: Unblock CompanyB or tackle high-priority CompanyA/XYZ work?
+Focus: Unblock ExampleB or tackle high-priority ExampleA/ExampleC work?
 ```
 
 ### Example 2: Single Domain
 
-**User:** `/tasks CompanyA`
+**User:** `/tasks examplea`
 
 **Output:**
 ```
@@ -129,7 +129,7 @@ shopify-inventory-audit - Audit inventory levels
 review-abandoned-carts - Analyze cart abandonment patterns
 
 ---
-CompanyA: 4 tasks (1 in progress, 3 todo)
+ExampleA: 4 tasks (1 in progress, 3 todo)
 
 Next up: Finish product descriptions, then tackle imagery?
 ```
@@ -141,13 +141,13 @@ Next up: Finish product descriptions, then tackle imagery?
 **Output:**
 ```
 ## IN PROGRESS
-[XYZ] prepare-ia-review-meeting - Due: 2026-01-10
+[ExampleC] prepare-ia-review-meeting - Due: 2026-01-10
 
 ## TODO - High
-[CompanyA] optimize-product-images
-[XYZ] review-navigation-structure
-[CompanyB] property-search-ui
-[CompanyA] shopify-inventory-audit
+[ExampleA] optimize-product-images
+[ExampleC] review-navigation-structure
+[ExampleB] property-search-ui
+[ExampleA] shopify-inventory-audit
 
 ---
 5 high-priority tasks
@@ -155,11 +155,11 @@ Next up: Finish product descriptions, then tackle imagery?
 
 ### Example 4: Clean Slate
 
-**User:** `/tasks XYZ`
+**User:** `/tasks examplec`
 
 **Output:**
 ```
-No active tasks for XYZ.
+No active tasks for ExampleC.
 
 Want to:
 - Check planning docs for upcoming work?

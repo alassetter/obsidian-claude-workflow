@@ -31,7 +31,7 @@ You have Obsidian MCP access. Extract a reusable prompt pattern from the current
    - Based on what the prompt does
    
    **Domain:**
-   - CompanyA, CompanyB, XYZ, Development, or General?
+   - ExampleA, ExampleB, ExampleC, Development, or General?
    - General if applicable across domains
    
    **Reuse potential:**
@@ -109,13 +109,13 @@ User says:
 
 - `{{prompt_name}}`: User-specified or suggested name
 - `{{category}}`: Analysis, Business, Coding, Meta, Writing
-- `{{domain}}`: CompanyA, CompanyB, XYZ, Development, General
+- `{{domain}}`: ExampleA, ExampleB, ExampleC, Development, General
 
 ## Examples
 
 ### Example 1: Saving Product Description Prompt
 
-**Context:** User just had Claude write a great CompanyA product description
+**Context:** User just had Claude write a great ExampleA product description
 
 **User:** `/prompt save`
 
@@ -127,7 +127,7 @@ User says:
 
 **User:** "Yes"
 
-**Claude:** "Domain? This seems CompanyA-specific. Correct?"
+**Claude:** "Domain? This seems ExampleA-specific. Correct?"
 
 **User:** "Yes"
 
@@ -135,12 +135,12 @@ User says:
 ```
 Created: 05_Prompts/Writing/Product_Description_Writer.md
 
-Prompt saved for writing CompanyA product descriptions.
+Prompt saved for writing ExampleA product descriptions.
 
 Use it by saying: "Use my product description prompt for [product]"
 Or: /prompt use product-description
 
-Added to Prompt Dashboard under Writing > CompanyA.
+Added to Prompt Dashboard under Writing > ExampleA.
 ```
 
 **Saved Prompt File:**
@@ -148,7 +148,7 @@ Added to Prompt Dashboard under Writing > CompanyA.
 ---
 type: prompt
 category: Writing
-domain: CompanyA
+domain: ExampleA
 reuse: high
 audience: ai
 created: 2026-01-06
@@ -158,9 +158,9 @@ use_count: 1
 
 ## Prompt
 
-Write a compelling product description for {{product_name}} that embodies CompanyA's brand voice.
+Write a compelling product description for {{product_name}} that embodies ExampleA's brand voice.
 
-Read brand guidelines from: 02_Company_CompanyA/Documentation/Brand-Voice-Guidelines.md
+Read brand guidelines from: 02_Company_ExampleA/Documentation/Brand-Voice-Guidelines.md
 
 Include:
 - Attention-grabbing opening (Western authenticity)
@@ -173,7 +173,7 @@ Target length: 100-150 words
 
 ## When to Use
 
-When adding new products to CompanyA's Shopify store or updating existing product descriptions.
+When adding new products to ExampleA's Shopify store or updating existing product descriptions.
 
 ## Variables
 
@@ -217,7 +217,7 @@ Saved your code review pattern with the comprehensive checklist.
 
 Use: "Review this code using my checklist" or /prompt use code-review
 
-Added to Prompt Dashboard under Coding > CompanyB.
+Added to Prompt Dashboard under Coding > ExampleB.
 ```
 
 ### Example 3: Already Exists

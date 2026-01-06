@@ -21,7 +21,7 @@ You have Obsidian MCP access. Save current work state as a checkpoint for resumi
    - Extract key activities and progress
 
 2. **Determine domain:**
-   - If clear from context (CompanyA, CompanyB, XYZ, Development), use that
+   - If clear from context (ExampleA, ExampleB, ExampleC, Development), use that
    - If multi-domain session, create one checkpoint with all contexts
    - If unclear, ASK user which domain
 
@@ -125,13 +125,13 @@ User says:
 
 ### Example 1: Development Session
 
-**Session:** Working on CompanyB authentication for 2 hours
+**Session:** Working on ExampleB authentication for 2 hours
 
 **User:** `/checkpoint`
 
 **Output:**
 ```
-Checkpoint saved: 09_Planning/2026-01-06-CompanyB-auth-system-checkpoint.md
+Checkpoint saved: 09_Planning/2026-01-06-exampleb-auth-system-checkpoint.md
 
 Summary: Built user authentication flow, decided on JWT approach, blocked on OAuth configuration.
 
@@ -143,15 +143,15 @@ Ready to switch context or done for the day?
 ---
 type: checkpoint
 date: 2026-01-06
-project: CompanyB
+project: ExampleB
 session_duration: 2 hours
 status: blocked
 ---
 
-# CompanyB - Authentication System
+# ExampleB - Authentication System
 
 ## What I Worked On
-Building user authentication for CompanyB platform. Focused on login flow, session management, and password reset functionality.
+Building user authentication for ExampleB platform. Focused on login flow, session management, and password reset functionality.
 
 ## Decisions Made
 - Using JWT tokens for session management (instead of server-side sessions)
@@ -188,13 +188,13 @@ Can work on password reset flow while waiting, or pivot to property search UI.
 
 ### Example 2: Content Work
 
-**Session:** Writing CompanyA product descriptions
+**Session:** Writing ExampleA product descriptions
 
 **User:** `/checkpoint`
 
 **Output:**
 ```
-Checkpoint saved: 09_Planning/2026-01-06-CompanyA-product-descriptions-checkpoint.md
+Checkpoint saved: 09_Planning/2026-01-06-examplea-product-descriptions-checkpoint.md
 
 Summary: Completed 6 of 10 fall collection product descriptions using brand voice guidelines.
 
@@ -206,12 +206,12 @@ Continue with remaining 4 products or switch context?
 ---
 type: checkpoint
 date: 2026-01-06
-project: CompanyA
+project: ExampleA
 session_duration: 1.5 hours
 status: in-progress
 ---
 
-# CompanyA - Fall Collection Product Descriptions
+# ExampleA - Fall Collection Product Descriptions
 
 ## What I Worked On
 Writing optimized product descriptions for fall 2026 collection launch. Applied brand voice guidelines and SEO keywords.
@@ -245,7 +245,7 @@ Writing optimized product descriptions for fall 2026 collection launch. Applied 
 None - workflow is smooth
 
 ## Context for Next Session
-- Brand voice doc: 02_Company_CompanyA/Documentation/Brand-Voice-Guidelines.md
+- Brand voice doc: 02_Company_ExampleA/Documentation/Brand-Voice-Guidelines.md
 - Target word count: 100-150 words
 - Format: Brief hook → Features → Craftsmanship → Care
 - All products in "Fall 2026" collection
@@ -261,7 +261,7 @@ None - workflow is smooth
 ```
 Checkpoint saved: 09_Planning/2026-01-06-multi-domain-checkpoint.md
 
-Summary: XYZ meeting prep (done), CompanyA descriptions (6/10), CompanyB planning started.
+Summary: ExampleC meeting prep (done), ExampleA descriptions (6/10), ExampleB planning started.
 
 Typical interrupt-driven day! Where do you want to focus next?
 ```

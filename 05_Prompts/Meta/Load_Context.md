@@ -17,7 +17,7 @@ You have Obsidian MCP access. Load complete context for a domain so user can sta
 
 1. **Identify domain:**
    - User says `/load [domain]` or "load context for [domain]"
-   - Accept full names OR shortcuts: CompanyA/cc, CompanyB/ax, XYZ/XYZ, Development/dev
+   - Accept full names OR shortcuts: ExampleA/ea, ExampleB/eb, ExampleC/examplec, Development/dev
 
 2. **Read these files in order:**
    
@@ -82,26 +82,26 @@ You have Obsidian MCP access. Load complete context for a domain so user can sta
 User says:
 - `/load [domain]`
 - `/load` (ask which domain)
-- "Load context for CompanyA"
-- "Switch to XYZ work"
-- "Where were we on CompanyB?"
+- "Load context for ExampleA"
+- "Switch to ExampleC work"
+- "Where were we on ExampleB?"
 - "What's going on with [domain]?"
 
 ## Variables
 
-- `{{domain}}`: Required - CompanyA/cc, CompanyB/ax, XYZ/XYZ, Development/dev
+- `{{domain}}`: Required - ExampleA/ea, ExampleB/eb, ExampleC/examplec, Development/dev
 - `--deep` flag: Read all documentation too (more comprehensive)
 - `--tasks-only` flag: Just show tasks, skip planning
 
 ## Examples
 
-### Example 1: Load CompanyA
+### Example 1: Load ExampleA
 
-**User:** `/load CompanyA`
+**User:** `/load examplea`
 
 **Output:**
 ```
-Switch to Claude Desktop project: 'CompanyA Shopify'
+Switch to Claude Desktop project: 'ExampleA Shopify'
 
 ## Current State
 - B2C/B2B western wear business via Shopify
@@ -135,11 +135,11 @@ What do you want to work on?
 
 ### Example 2: Load with Blocker
 
-**User:** `/load CompanyB`
+**User:** `/load exampleb`
 
 **Output:**
 ```
-Switch to Claude Desktop project: 'company-b'
+Switch to Claude Desktop project: 'exampleb'
 
 ## Current State
 - Real estate software in active development

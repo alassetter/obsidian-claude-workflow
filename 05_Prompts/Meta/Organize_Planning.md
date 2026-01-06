@@ -20,9 +20,9 @@ You have Obsidian MCP access. Read `09_Planning/inbox.md` and organize its conte
    - Identify all task items, ideas, and notes
 
 2. **Categorize by domain:**
-   - CompanyA (cc) - Western wear business operations
-   - CompanyB (ax) - Real estate software development
-   - XYZ - Enterprise intranet client work
+   - ExampleA (ea) - Western wear business operations
+   - ExampleB (eb) - Real estate software development
+   - ExampleC - Enterprise intranet client work
    - Development (dev) - Learning and skill building
    - If unclear, ASK the user which domain
 
@@ -75,17 +75,17 @@ User says:
 **Inbox content:**
 ```
 Need to update 10 product descriptions for fall collection
-XYZ wants IA review meeting prep by Friday
-Continue CompanyB user dashboard - authentication is blocking
+ExampleC wants IA review meeting prep by Friday
+Continue ExampleB user dashboard - authentication is blocking
 Research letta.com for memory management
 ```
 
 **Output:**
 ```
 Created 4 tasks:
-- 02_Company_CompanyA/Tasks/update-product-descriptions.md (priority: high, due: none)
-- 01_Clients/XYZ/Tasks/prepare-ia-review-meeting.md (priority: high, due: 2026-01-10)
-- 03_Company_CompanyB/Tasks/user-dashboard-authentication.md (priority: medium, blocked)
+- 02_Company_ExampleA/Tasks/update-product-descriptions.md (priority: high, due: none)
+- 01_Clients/ExampleC/Tasks/prepare-ia-review-meeting.md (priority: high, due: 2026-01-10)
+- 03_Company_ExampleB/Tasks/user-dashboard-authentication.md (priority: medium, blocked)
 - 04_Development/Tasks/research-letta-memory.md (priority: low)
 
 Should I archive the inbox note, keep it active, or delete it?
@@ -93,21 +93,21 @@ Should I archive the inbox note, keep it active, or delete it?
 
 ### Example 2: Domain-Specific
 
-**Command:** `/organize CompanyA`
+**Command:** `/organize examplea`
 
-**Result:** Only creates tasks for CompanyA items, leaves others in inbox
+**Result:** Only creates tasks for ExampleA items, leaves others in inbox
 
 ### Example 3: Cross-Domain Task
 
-**Inbox:** "Integrate Shopify data into CompanyB for CompanyA analytics"
+**Inbox:** "Integrate Shopify data into ExampleB for ExampleA analytics"
 
 **Output:**
 ```
 Created 2 linked tasks:
-- 02_Company_CompanyA/Tasks/shopify-data-export.md
-  (Extract Shopify data for CompanyB integration)
-- 03_Company_CompanyB/Tasks/integrate-shopify-data.md
-  (Build integration to receive CompanyA Shopify data)
+- 02_Company_ExampleA/Tasks/shopify-data-export.md
+  (Extract Shopify data for ExampleB integration)
+- 03_Company_ExampleB/Tasks/integrate-shopify-data.md
+  (Build integration to receive ExampleA Shopify data)
 Both tasks linked via related_tasks field.
 ```
 
