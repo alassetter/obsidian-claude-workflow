@@ -6,11 +6,11 @@ Your cheat sheet for working with Claude + Obsidian MCP.
 
 | Command | What It Does | Example |
 |---------|-------------|---------|
-| `/inbox [text]` | Quick add to planning inbox | `/inbox examplec create page` |
+| `/inbox [text]` | Quick add to planning inbox | `/inbox xyz create page` |
 | `/organize` | Process planning inbox into tasks | `/organize` |
 | `/dashboard` | Visual HTML task overview | `/dashboard` |
-| `/load [domain]` | Load full context for domain | `/load examplea` |
-| `/tasks [domain]` | Show active tasks | `/tasks examplec` |
+| `/load [domain]` | Load full context for domain | `/load companya` |
+| `/tasks [domain]` | Show active tasks | `/tasks xyz` |
 | `/checkpoint` | Save current work state | `/checkpoint` |
 | `/rewrite` | Rewrite content professionally | `/rewrite` |
 
@@ -20,23 +20,23 @@ Your cheat sheet for working with Claude + Obsidian MCP.
 
 | Command | What It Does | Example |
 |---------|-------------|---------|
-| `/inbox [text]` | Quick add to inbox (no file opening!) | `/inbox examplec create employment page` |
-| `/plan [domain]` | Open/create planning doc | `/plan exampleb` |
+| `/inbox [text]` | Quick add to inbox (no file opening!) | `/inbox xyz create landing page` |
+| `/plan [domain]` | Open/create planning doc | `/plan companyb` |
 | `/organize` | Process inbox → tasks | `/organize` |
-| `/organize [domain]` | Process inbox for specific domain | `/organize examplea` |
+| `/organize [domain]` | Process inbox for specific domain | `/organize companya` |
 | `/dashboard` | Visual HTML task dashboard | `/dashboard` |
 | `/tasks` | Show all active tasks (text) | `/tasks` |
-| `/tasks [domain]` | Show domain-specific tasks | `/tasks examplec` |
-| `/task add [domain]` | Create new task | `/task add examplea` |
+| `/tasks [domain]` | Show domain-specific tasks | `/tasks xyz` |
+| `/task add [domain]` | Create new task | `/task add companya` |
 | `/task done [name]` | Mark task complete | `/task done update-products` |
 
 ### Context & Loading
 
 | Command | What It Does | Example |
 |---------|-------------|---------|
-| `/load [domain]` | Load full context | `/load examplea` |
-| `/switch [domain]` | Tell me which Claude project | `/switch exampleb` |
-| `/status [domain]` | Quick status summary | `/status examplec` |
+| `/load [domain]` | Load full context | `/load companya` |
+| `/switch [domain]` | Tell me which Claude project | `/switch companyb` |
+| `/status [domain]` | Quick status summary | `/status xyz` |
 | `/checkpoint` | Save current work state | `/checkpoint` |
 
 ### Documentation
@@ -44,7 +44,7 @@ Your cheat sheet for working with Claude + Obsidian MCP.
 | Command | What It Does | Example |
 |---------|-------------|---------|
 | `/doc [topic]` | Search documentation | `/doc shopify api` |
-| `/save doc [domain]` | Save conversation as doc | `/save doc examplea` |
+| `/save doc [domain]` | Save conversation as doc | `/save doc companya` |
 | `/howto [topic]` | Find how-to guide | `/howto git workflow` |
 
 ### Prompts
@@ -61,7 +61,7 @@ Your cheat sheet for working with Claude + Obsidian MCP.
 |---------|-------------|---------|
 | `/rewrite` | Rewrite content | `/rewrite professional` |
 | `/rewrite [style]` | Rewrite in specific style | `/rewrite casual` |
-| `/voice [brand]` | Apply brand voice | `/voice examplea` |
+| `/voice [brand]` | Apply brand voice | `/voice companya` |
 | `/analyze` | Analyze content/data | `/analyze` |
 
 ### Help & Navigation
@@ -77,17 +77,17 @@ You can use full names OR shortcuts:
 
 | Full Name | Shortcut | Use Either |
 |-----------|----------|------------|
-| ExampleA | ea | `/load examplea` OR `/load ea` |
-| ExampleB | eb | `/load exampleb` OR `/load eb` |
-| ExampleC | examplec | `/load examplec` |
+| Company_A | ca | `/load companya` OR `/load ca` |
+| Company_B | cb | `/load companyb` OR `/load cb` |
+| Client_XYZ | xyz | `/load xyz` |
 | Development | dev | `/load development` OR `/load dev` |
 
 ## 💡 Common Workflows
 
 ### Throughout Your Day - Quick Capture
 ```
-/inbox examplec create employment page
-/inbox examplea update product photos
+/inbox xyz create landing page
+/inbox ca update content
 /inbox research new framework
 ```
 Instant capture without opening files!
@@ -115,7 +115,7 @@ Claude creates tasks in proper domains, asks about archiving.
 ```
 /dashboard              (visual HTML overview)
 /tasks                  (text list, all domains)
-/tasks examplea       (specific domain)
+/tasks companya         (specific domain)
 ```
 
 ### Need to Remember How to Do Something
@@ -142,7 +142,7 @@ Claude extracts the prompt pattern and saves it.
 You don't HAVE to use slash commands. These also work:
 
 **Instead of `/inbox`:**
-- "Add to inbox: create ExampleC page"
+- "Add to inbox: create Client_XYZ page"
 - "Quick capture: review analytics"
 
 **Instead of `/dashboard`:**
@@ -150,10 +150,10 @@ You don't HAVE to use slash commands. These also work:
 - "What's on my plate?"
 - "Task overview"
 
-**Instead of `/load examplea`:**
-- "Load context for ExampleA"
-- "Switch to ExampleA work"
-- "What's going on with ExampleA?"
+**Instead of `/load companya`:**
+- "Load context for Company_A"
+- "Switch to Company_A work"
+- "What's going on with Company_A?"
 
 **Instead of `/organize`:**
 - "Organize my planning notes"
@@ -174,16 +174,16 @@ The slash commands are just faster! Use whatever feels natural.
 - `casual` - Friendly, relaxed
 - `technical` - Developer/technical audience
 - `marketing` - Persuasive, benefit-focused
-- `examplea` - ExampleA brand voice
+- `companya` - Company_A brand voice
 
 ### Task Filters
-- By domain: `/tasks examplea`
+- By domain: `/tasks companya`
 - By status: `/tasks status:in-progress`
 - By priority: `/tasks priority:high`
 
 ### Organization Options
 - All domains: `/organize`
-- Specific domain: `/organize examplea`
+- Specific domain: `/organize companya`
 - Dry run: `/organize --preview` (shows what would be created)
 
 ### Dashboard Options
@@ -195,8 +195,8 @@ The slash commands are just faster! Use whatever feels natural.
 
 **Quick Capture Throughout Day:**
 ```
-/inbox examplec urgent meeting prep
-/inbox ea analyze sales data
+/inbox xyz urgent meeting prep
+/inbox ca analyze sales data
 /inbox research competitor pricing
 ```
 No context switching - just capture and move on!
@@ -209,16 +209,16 @@ No context switching - just capture and move on!
 
 **Batch Operations:**
 ```
-/tasks examplea status:todo priority:high
+/tasks companya status:todo priority:high
 ```
-Show only high-priority todos for ExampleA.
+Show only high-priority todos for Company_A.
 
 **Context Chain:**
 ```
-/load examplea
+/load companya
 [work for a while]
 /checkpoint
-/load examplec
+/load xyz
 ```
 Seamless context switching with saved state.
 
@@ -230,9 +230,9 @@ For items that span multiple domains, create separate tasks in each.
 
 **Prompt Discovery:**
 ```
-/prompt find domain:examplea category:writing
+/prompt find domain:companya category:writing
 ```
-Find all ExampleA writing prompts.
+Find all Company_A writing prompts.
 
 ## 🔍 Finding Things
 
@@ -241,7 +241,7 @@ Find all ExampleA writing prompts.
 - `/commands` - Lists all available commands
 
 **Don't Remember Where File Is:**
-- Just describe it: "Find my ExampleC navigation doc"
+- Just describe it: "Find my Client_XYZ navigation doc"
 - Claude will search and find it
 
 **Don't Remember Exact Prompt Name:**

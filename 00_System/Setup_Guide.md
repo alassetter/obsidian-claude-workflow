@@ -5,7 +5,7 @@ Welcome to your Obsidian knowledge base integrated with Claude via MCP (Model Co
 ## 🎯 What This System Does
 
 This vault is designed for your **interrupt-driven, multi-context workflow** where you:
-- Work across multiple projects (ExampleC, ExampleA, ExampleB)
+- Work across multiple projects (Client_XYZ, Company_A, Company_B)
 - Switch contexts frequently throughout the day
 - Need Claude to remember decisions, tech stacks, and project state
 - Want to brain dump now, organize later
@@ -17,17 +17,17 @@ This vault is designed for your **interrupt-driven, multi-context workflow** whe
 Each major project area has its own Planning/Tasks/Documentation:
 
 **01_Clients/** - Client work
-- `ExampleC/` - Enterprise intranet project
+- `Client_XYZ/` - Enterprise project
   - Planning/ - Project roadmaps
   - Tasks/ - Active to-dos
   - Documentation/ - Client-specific processes
 
-**02_Company_ExampleA/** - Your western wear business
+**02_Company_A/** - Your e-commerce business
 - Planning/ - Product/marketing roadmaps
 - Tasks/ - Daily operations
 - Documentation/ - Brand guidelines, processes
 
-**03_Company_ExampleB/** - Real estate software
+**03_Company_B/** - SaaS platform
 - Planning/ - Dev roadmap
 - Tasks/ - Development tasks
 - Documentation/ - Architecture, tech decisions
@@ -57,17 +57,17 @@ Each major project area has its own Planning/Tasks/Documentation:
 
 ### Morning: Load Context
 ```
-You: /load examplea
+You: /load companya
 Claude: [Reads context, tells you where you left off, asks what to focus on]
 ```
 
 ### Throughout Day: Brain Dump
 As tasks and ideas come up, dump them in `09_Planning/inbox.md`:
 ```
-Need to update 10 product descriptions
-ExampleC wants IA review meeting prep
-Continue ExampleB user dashboard
-Research letta.com
+Need to update 10 content items
+Client_XYZ wants IA review meeting prep
+Continue Company_B user dashboard
+Research new tools
 ```
 No formatting needed - just dump and move on.
 
@@ -76,8 +76,8 @@ No formatting needed - just dump and move on.
 You: /checkpoint
 Claude: [Saves current work state]
 
-You: /load examplec
-Claude: [Switches context, loads ExampleC info]
+You: /load xyz
+Claude: [Switches context, loads Client_XYZ info]
 ```
 
 ### End of Day: Organize
@@ -88,8 +88,8 @@ Claude: [Processes inbox, creates tasks in proper domains, asks about archiving]
 
 ### Check Tasks
 ```
-You: /tasks examplea
-Claude: [Shows ExampleA tasks by priority/status]
+You: /tasks companya
+Claude: [Shows Company_A tasks by priority/status]
 ```
 
 ## 🎮 Slash Commands
@@ -110,7 +110,7 @@ Templates are in `00_System/Templates/`. To use:
 1. Copy the template content
 2. Paste into new note in the right location
 3. Fill in the frontmatter and content
-4. Claude can help with this - just say "create a task for ExampleA"
+4. Claude can help with this - just say "create a task for Company_A"
 
 **Key Templates:**
 - Planning.md - Roadmaps, feature specs
@@ -123,12 +123,12 @@ Templates are in `00_System/Templates/`. To use:
 
 You have Claude Desktop projects set up. See `Claude_Projects.md` for mapping.
 
-When Claude says "Switch to: ExampleA Shopify", switch to that project in Claude Desktop. This ensures proper MCP context and tools are available.
+When Claude says "Switch to: Company A Project", switch to that project in Claude Desktop. This ensures proper MCP context and tools are available.
 
 ## 🧠 How Claude Uses This Vault
 
-**When you say `/load examplea`:**
-1. Claude reads `02_Company_ExampleA/Project_Context.md`
+**When you say `/load companya`:**
+1. Claude reads `02_Company_A/Project_Context.md`
 2. Reads recent Planning docs
 3. Reads active Tasks
 4. Reads relevant Documentation

@@ -11,7 +11,7 @@ use_count: 0
 
 ## Prompt
 
-You have Obsidian MCP aeaess. Search for and display saved prompts based on keywords, domain, or category.
+You have Obsidian MCP access. Search for and display saved prompts based on keywords, domain, or category.
 
 **Process:**
 
@@ -19,16 +19,16 @@ You have Obsidian MCP aeaess. Search for and display saved prompts based on keyw
    
    User may search by:
    - **Keyword:** Text in prompt name or content
-   - **Domain:** ExampleA/ea, ExampleB/eb, ExampleC/examplec, Development/dev, General
+   - **Domain:** Company_A/ca, Company_B/cb, Client_XYZ/xyz, Development/dev, General
    - **Category:** Analysis, Business, Coding, Meta, Writing
    - **Reuse level:** high, medium, low
-   - **Combination:** domain:examplea category:writing
+   - **Combination:** domain:companya category:writing
    
    Examples:
    - `/prompt find rewrite` → keyword search
-   - `/prompt find domain:examplea` → domain filter
+   - `/prompt find domain:companya` → domain filter
    - `/prompt find category:coding` → category filter
-   - `/prompt find writing examplea` → combined search
+   - `/prompt find writing companya` → combined search
 
 2. **Search strategy:**
    
@@ -95,7 +95,7 @@ You have Obsidian MCP aeaess. Search for and display saved prompts based on keyw
 User says:
 - `/prompt find [query]`
 - "Find my [keyword] prompt"
-- "Show me ExampleA prompts"
+- "Show me Company_A prompts"
 - "What writing prompts do I have?"
 - "Search prompts for [topic]"
 
@@ -120,34 +120,34 @@ User says:
 Reuse: High | Last used: 2026-01-06 | Used: 15 times
 → Rewrite content in specific styles: professional, casual, technical, marketing, brand-specific
 
-**Content_Rewrite** (Writing > ExampleC)
+**Content_Rewrite** (Writing > Client_XYZ)
 Reuse: Medium | Last used: 2026-01-02 | Used: 3 times
-→ Rewrite ExampleC client content maintaining enterprise tone
+→ Rewrite Client_XYZ client content maintaining enterprise tone
 
 Use: /prompt use rewrite-content or "Use my rewrite prompt"
 ```
 
 ### Example 2: Domain Filter
 
-**User:** `/prompt find domain:examplea`
+**User:** `/prompt find domain:companya`
 
 **Output:**
 ```
-## Found 4 prompts for ExampleA
+## Found 4 prompts for Company_A
 
-**Product_Description_Writer** (Writing > ExampleA)
+**Content_Description_Writer** (Writing > Company_A)
 Reuse: High | Last used: 2026-01-06 | Used: 12 times
-→ Write compelling ExampleA product descriptions with brand voice
+→ Write compelling Company_A content descriptions with brand voice
 
-**Brand_Voice_Check** (Analysis > ExampleA)
+**Brand_Voice_Check** (Analysis > Company_A)
 Reuse: Medium | Last used: 2025-12-28 | Used: 5 times
-→ Verify content matches ExampleA brand guidelines
+→ Verify content matches Company_A brand guidelines
 
-**Shopify_Analytics** (Analysis > ExampleA)
+**E-commerce_Analytics** (Analysis > Company_A)
 Reuse: High | Last used: 2026-01-04 | Used: 8 times
-→ Analyze Shopify store performance and inventory
+→ Analyze e-commerce store performance and inventory
 
-**Marketing_Email** (Writing > ExampleA)
+**Marketing_Email** (Writing > Company_A)
 Reuse: Low | Last used: 2025-11-15 | Used: 2 times
 → Write marketing emails for product launches
 
@@ -156,19 +156,19 @@ Want details on any of these?
 
 ### Example 3: Category + Domain
 
-**User:** `/prompt find category:coding domain:exampleb`
+**User:** `/prompt find category:coding domain:companyb`
 
 **Output:**
 ```
-## Found 2 prompts for Coding > ExampleB
+## Found 2 prompts for Coding > Company_B
 
-**Code_Review_Checklist** (Coding > ExampleB)
+**Code_Review_Checklist** (Coding > Company_B)
 Reuse: High | Last used: 2026-01-05 | Used: 7 times
 → Comprehensive code review with security, performance, and style checks
 
-**Architecture_Discussion** (Coding > ExampleB)
+**Architecture_Discussion** (Coding > Company_B)
 Reuse: Medium | Last used: 2025-12-20 | Used: 4 times
-→ Discuss technical architecture decisions for ExampleB features
+→ Discuss technical architecture decisions for Company_B features
 
 Both are ready to use. Which one?
 ```
@@ -182,7 +182,7 @@ Both are ready to use. Which one?
 No prompts found matching "email templates"
 
 Did you mean:
-- "Marketing_Email" (Writing > ExampleA)
+- "Marketing_Email" (Writing > Company_A)
 - "Professional_Writer" (Writing > General)
 
 Or want to create a new prompt? Say "/prompt save" after we craft the perfect email template together.
@@ -207,7 +207,7 @@ Acts as senior engineer providing code review, architecture advice, and best pra
 - {{context}}: Project context
 - {{focus}}: Specific concern (performance, security, maintainability)
 
-**Recent usage:** Used frequently for ExampleB code reviews
+**Recent usage:** Used frequently for Company_B code reviews
 
 Want to use this prompt now? Just share the code and context.
 ```
@@ -230,7 +230,7 @@ Want to use this prompt now? Just share the code and context.
 - Prompt Dashboard makes filtering fast
 - Keyword search is flexible - tries hard to find matches
 - If searching often, Dashboard is your friend
-- Can combine multiple filters: `domain:examplea category:writing reuse:high`
+- Can combine multiple filters: `domain:companya category:writing reuse:high`
 - Update last_used when prompts are invoked via search
 - High reuse prompts float to top
 - This helps with prompt discovery - you may forget what you saved!

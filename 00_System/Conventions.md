@@ -2,7 +2,7 @@
 
 ## Structure Rules
 - Clients live in `/01_Clients`
-- Each domain (Clients, ExampleA, ExampleB, Development) is self-contained with Planning/Tasks/Documentation
+- Each domain (Clients, Company_A, Company_B, Development) is self-contained with Planning/Tasks/Documentation
 - Projects always live under their client
 - Development knowledge never lives inside a client
 - Prompts live only in `/05_Prompts` - organized by category with domain tags (hybrid system)
@@ -33,7 +33,7 @@ Every note uses frontmatter. Filtering and AI depend on this.
 **Planning:**
 ```yaml
 type: planning
-domain: [ExampleA | ExampleB | ExampleC | Development]
+domain: [Company_A | Company_B | Client_XYZ | Development]
 created: YYYY-MM-DD
 status: active | completed | on-hold
 related_tasks: []
@@ -42,7 +42,7 @@ related_tasks: []
 **Task:**
 ```yaml
 type: task
-domain: [ExampleA | ExampleB | ExampleC | Development]
+domain: [Company_A | Company_B | Client_XYZ | Development]
 status: [todo | in-progress | blocked | completed]
 priority: [low | medium | high | urgent]
 created: YYYY-MM-DD
@@ -55,7 +55,7 @@ related_tasks: []
 **Documentation:**
 ```yaml
 type: documentation
-domain: [ExampleA | ExampleB | ExampleC | Development | General]
+domain: [Company_A | Company_B | Client_XYZ | Development | General]
 category: [AI | Shopify | Development | IA | DevOps | Design | HowTos | Process]
 topic: (descriptive)
 created: YYYY-MM-DD
@@ -66,7 +66,7 @@ last_updated: YYYY-MM-DD
 ```yaml
 type: prompt
 category: [Analysis | Business | Coding | Meta | Writing]
-domain: [ExampleA | ExampleB | ExampleC | Development | General]
+domain: [Company_A | Company_B | Client_XYZ | Development | General]
 reuse: [high | medium | low]
 audience: [ai | human]
 created: YYYY-MM-DD
@@ -77,7 +77,7 @@ use_count: 0
 **Project Context:**
 ```yaml
 type: project_context
-domain: [ExampleA | ExampleB | ExampleC | Development]
+domain: [Company_A | Company_B | Client_XYZ | Development]
 claude_project: (name of Claude Desktop project)
 status: active
 last_updated: YYYY-MM-DD
@@ -86,7 +86,7 @@ last_updated: YYYY-MM-DD
 **Reference:**
 ```yaml
 type: reference
-domain: [ExampleA | ExampleB | ExampleC | Development | General]
+domain: [Company_A | Company_B | Client_XYZ | Development | General]
 category: [AI | Shopify | Development | IA | DevOps | Design | HowTos]
 ignore: false  # or true - see Reference Materials section
 created: YYYY-MM-DD
@@ -178,9 +178,9 @@ Claude will skip these files when loading context. Never delete - always archive
 
 ## Domain Shortcuts
 For convenience, use either full names or shortcuts:
-- ExampleA → ea
-- ExampleB → eb  
-- ExampleC → examplec
+- Company_A → ca
+- Company_B → cb  
+- Client_XYZ → xyz
 - Development → dev
 
-Both work in all commands: `/load examplea` = `/load ea`
+Both work in all commands: `/load companya` = `/load ca`

@@ -21,7 +21,7 @@ You have Obsidian MCP access. Quickly append text to the planning inbox without 
 
 2. **Parse user input:**
    - Extract the text to add
-   - Optional domain hint (examplec, examplea, exampleb, dev)
+   - Optional domain hint (xyz, companya, companyb, dev)
    - Keep formatting simple
 
 3. **Append to inbox:**
@@ -46,7 +46,7 @@ You have Obsidian MCP access. Quickly append text to the planning inbox without 
 
 User says:
 - `/inbox [text]`
-- `/inbox examplec [text]`
+- `/inbox xyz [text]`
 - "Add to inbox: [text]"
 - "Quick capture: [text]"
 
@@ -59,27 +59,27 @@ User says:
 
 ### Example 1: Simple Addition
 
-**User:** `/inbox examplec create employment page and link to lever medium`
+**User:** `/inbox xyz create landing page and link to external resource`
 
 **Claude reads inbox, appends:**
 ```
-**[11:45]** examplec create employment page and link to lever medium
+**[11:45]** xyz create landing page and link to external resource
 ```
 
 **Output:**
 ```
-Added to inbox: "examplec create employment page and link to lever medium"
+Added to inbox: "xyz create landing page and link to external resource"
 
 Run /organize when ready to process.
 ```
 
 ### Example 2: Multi-line Entry
 
-**User:** `/inbox update examplea product photos for winter collection - need professional shots of hats, boots, and jackets`
+**User:** `/inbox update companya content photos for seasonal collection - need professional shots`
 
 **Claude appends:**
 ```
-**[14:22]** update examplea product photos for winter collection - need professional shots of hats, boots, and jackets
+**[14:22]** update companya content photos for seasonal collection - need professional shots
 ```
 
 **Output:**
@@ -109,16 +109,16 @@ Run /organize to sort into appropriate domain.
 
 **User:** 
 ```
-/inbox update exampleb database schema
-/inbox review examplec analytics
-/inbox examplea inventory audit
+/inbox update companyb database schema
+/inbox review xyz analytics
+/inbox companya inventory audit
 ```
 
 **Claude appends all three:**
 ```
-**[10:30]** update exampleb database schema
-**[10:30]** review examplec analytics  
-**[10:30]** examplea inventory audit
+**[10:30]** update companyb database schema
+**[10:30]** review xyz analytics  
+**[10:30]** companya inventory audit
 ```
 
 **Output:**

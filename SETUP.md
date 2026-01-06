@@ -74,7 +74,7 @@ Complete installation and configuration guide for the Obsidian + Claude workflow
 cd ~/Documents/
 
 # Clone the repository
-git clone https://github.com/alassetter/obsidian-claude-workflow.git
+git clone https://github.com/yourusername/obsidian-claude-workflow.git
 
 # Navigate into the vault
 cd obsidian-claude-workflow
@@ -82,7 +82,7 @@ cd obsidian-claude-workflow
 
 **Option B: Download ZIP**
 
-1. Go to https://github.com/alassetter/obsidian-claude-workflow
+1. Go to https://github.com/yourusername/obsidian-claude-workflow
 2. Click "Code" → "Download ZIP"
 3. Extract to your desired location
 4. Rename folder if needed
@@ -148,14 +148,14 @@ See [PLUGINS.md](PLUGINS.md) for the full list and installation instructions.
 
 You'll create multiple Claude Desktop projects, one per domain:
 
-**For each domain (ExampleA, ExampleB, ExampleC, Development):**
+**For each domain (Company_A, Company_B, Client_XYZ, Development):**
 
 1. In Claude Desktop, click "New Project"
 2. Name it according to domain:
-   - `ExampleA Shopify` (for ExampleA)
-   - `exampleb` (for ExampleB)
-   - `ExampleC` (for ExampleC)
-   - `ClaudeKit` (for Development)
+   - `Company A Project` (for Company_A)
+   - `Company B Project` (for Company_B)
+   - `Client XYZ Project` (for Client_XYZ)
+   - `Development Project` (for Development)
 3. Add custom instructions (see next section)
 4. Configure MCP servers (see MCP section)
 
@@ -219,21 +219,21 @@ pip install obsidian-mcp
 
 For each Claude Desktop project, set the working directory to the appropriate domain folder:
 
-**ExampleA Shopify:**
+**Company A Project:**
 ```json
 "filesystem": {
   "command": "npx",
   "args": ["-y", "@modelcontextprotocol/server-filesystem", 
-           "/path/to/obsidian-claude-workflow/02_Company_ExampleA"]
+           "/path/to/obsidian-claude-workflow/02_Company_A"]
 }
 ```
 
-**ExampleC:**
+**Client XYZ Project:**
 ```json
 "filesystem": {
   "command": "npx",
   "args": ["-y", "@modelcontextprotocol/server-filesystem",
-           "/path/to/obsidian-claude-workflow/01_Clients/ExampleC"]
+           "/path/to/obsidian-claude-workflow/01_Clients/Client_XYZ"]
 }
 ```
 
@@ -256,7 +256,7 @@ If you have a Shopify store:
 }
 ```
 
-Only add to relevant projects (e.g., "ExampleA Shopify")
+Only add to relevant projects (e.g., "Company A Project")
 
 ### Step 5: Restart Claude Desktop
 
@@ -399,7 +399,7 @@ Should:
 ### Still Having Issues?
 
 1. Check [README.md](README.md) for common issues
-2. Search [GitHub Issues](https://github.com/alassetter/obsidian-claude-workflow/issues)
+2. Search [GitHub Issues](https://github.com/yourusername/obsidian-claude-workflow/issues)
 3. Create new issue with:
    - Your OS
    - Obsidian version

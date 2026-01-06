@@ -18,5 +18,5 @@ This folder contains design principles, tools, and visual design references.
 
 ## Cross-Domain Resource
 This is general design knowledge. For brand-specific design, see:
-- `02_Company_ExampleA/Documentation/` for ExampleA brand guidelines
-- `01_Clients/ExampleC/Documentation/` for ExampleC design requirements
+- `02_Company_A/Documentation/` for Company_A brand guidelines
+- `01_Clients/Client_XYZ/Documentation/` for Client_XYZ design requirements

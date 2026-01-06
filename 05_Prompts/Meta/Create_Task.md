@@ -11,14 +11,14 @@ use_count: 0
 
 ## Prompt
 
-You have Obsidian MCP aeaess. Create a single task file in the appropriate domain.
+You have Obsidian MCP access. Create a single task file in the appropriate domain.
 
 **Process:**
 
 1. **Gather information:**
    
    If user provides all details, proceed. Otherwise ASK:
-   - Which domain? (ExampleA/ea, ExampleB/eb, ExampleC/examplec, Development/dev)
+   - Which domain? (Company_A/ca, Company_B/cb, Client_XYZ/xyz, Development/dev)
    - What needs to be done? (task description)
    - Priority? (urgent, high, medium, low) - default: medium
    - Due date? (optional)
@@ -51,7 +51,7 @@ You have Obsidian MCP aeaess. Create a single task file in the appropriate domai
    **Fill content:**
    - Clear description of what needs to be done
    - Why it matters (context)
-   - How to know it's done (aeaeptance criteria)
+   - How to know it's done (acceptance criteria)
    - Any steps if needed
    - Note blockers if any
 
@@ -73,14 +73,14 @@ You have Obsidian MCP aeaess. Create a single task file in the appropriate domai
 User says:
 - `/task add`
 - `/task add [domain]`
-- "Create a task for ExampleA"
+- "Create a task for Company_A"
 - "Add this to my tasks"
 - "Remind me to [do something]"
 - "I need to [task description]"
 
 ## Variables
 
-- `{{domain}}`: ExampleA/ea, ExampleB/eb, ExampleC/examplec, Development/dev
+- `{{domain}}`: Company_A/ca, Company_B/cb, Client_XYZ/xyz, Development/dev
 - `{{description}}`: What needs to be done
 - `{{priority}}`: urgent, high, medium, low
 - `{{due_date}}`: Optional due date
@@ -89,11 +89,11 @@ User says:
 
 ### Example 1: Quick Task Creation
 
-**User:** `/task add examplea`
+**User:** `/task add companya`
 
-**Claude:** "What needs to be done for ExampleA?"
+**Claude:** "What needs to be done for Company_A?"
 
-**User:** "Update 10 product descriptions for fall collection"
+**User:** "Update 10 content descriptions for seasonal collection"
 
 **Claude:** "Priority? (urgent/high/medium/low - default is medium)"
 
@@ -101,22 +101,22 @@ User says:
 
 **Output:**
 ```
-Created: 02_Company_ExampleA/Tasks/update-product-descriptions.md
+Created: 02_Company_A/Tasks/update-content-descriptions.md
 
-Task: Update 10 product descriptions for fall collection
+Task: Update 10 content descriptions for seasonal collection
 Priority: High
 Status: Todo
 
-Added to your ExampleA tasks. Want to link this to a planning doc?
+Added to your Company_A tasks. Want to link this to a planning doc?
 ```
 
 ### Example 2: Full Details Provided
 
-**User:** "Create an urgent task for ExampleC to prepare IA review meeting by Friday"
+**User:** "Create an urgent task for Client_XYZ to prepare IA review meeting by Friday"
 
 **Output:**
 ```
-Created: 01_Clients/ExampleC/Tasks/prepare-ia-review-meeting.md
+Created: 01_Clients/Client_XYZ/Tasks/prepare-ia-review-meeting.md
 
 Task: Prepare IA review meeting presentation
 Priority: Urgent
@@ -128,11 +128,11 @@ Task created with all details. Ready to start or need anything else?
 
 ### Example 3: With Blocker
 
-**User:** `/task add exampleb - build user dashboard, blocked on oauth config`
+**User:** `/task add companyb - build user dashboard, blocked on oauth config`
 
 **Output:**
 ```
-Created: 03_Company_ExampleB/Tasks/build-user-dashboard.md
+Created: 03_Company_B/Tasks/build-user-dashboard.md
 
 Task: Build user dashboard
 Priority: Medium
@@ -176,5 +176,5 @@ Added to Development learning tasks. Want to create a learning roadmap for this?
 - If task is part of larger planning, suggest linking it
 - If creating many tasks for same domain, suggest using planning inbox instead
 - Default to medium priority unless urgency is clear
-- Use natural language parsing - don't require perfect synteb
+- Use natural language parsing - don't require perfect syntax
 - Update last_used when executed

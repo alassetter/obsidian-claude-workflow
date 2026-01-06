@@ -20,9 +20,9 @@ You have Obsidian MCP access. Read `09_Planning/inbox.md` and organize its conte
    - Identify all task items, ideas, and notes
 
 2. **Categorize by domain:**
-   - ExampleA (ea) - Western wear business operations
-   - ExampleB (eb) - Real estate software development
-   - ExampleC - Enterprise intranet client work
+   - Company_A (ca) - E-commerce business operations
+   - Company_B (cb) - SaaS platform development
+   - Client_XYZ (xyz) - Enterprise project client work
    - Development (dev) - Learning and skill building
    - If unclear, ASK the user which domain
 
@@ -74,40 +74,40 @@ User says:
 
 **Inbox content:**
 ```
-Need to update 10 product descriptions for fall collection
-ExampleC wants IA review meeting prep by Friday
-Continue ExampleB user dashboard - authentication is blocking
-Research letta.com for memory management
+Need to update 10 content descriptions for seasonal collection
+Client_XYZ wants IA review meeting prep by Friday
+Continue Company_B user dashboard - authentication is blocking
+Research new tools for memory management
 ```
 
 **Output:**
 ```
 Created 4 tasks:
-- 02_Company_ExampleA/Tasks/update-product-descriptions.md (priority: high, due: none)
-- 01_Clients/ExampleC/Tasks/prepare-ia-review-meeting.md (priority: high, due: 2026-01-10)
-- 03_Company_ExampleB/Tasks/user-dashboard-authentication.md (priority: medium, blocked)
-- 04_Development/Tasks/research-letta-memory.md (priority: low)
+- 02_Company_A/Tasks/update-content-descriptions.md (priority: high, due: none)
+- 01_Clients/Client_XYZ/Tasks/prepare-ia-review-meeting.md (priority: high, due: 2026-01-10)
+- 03_Company_B/Tasks/user-dashboard-authentication.md (priority: medium, blocked)
+- 04_Development/Tasks/research-memory-tools.md (priority: low)
 
 Should I archive the inbox note, keep it active, or delete it?
 ```
 
 ### Example 2: Domain-Specific
 
-**Command:** `/organize examplea`
+**Command:** `/organize companya`
 
-**Result:** Only creates tasks for ExampleA items, leaves others in inbox
+**Result:** Only creates tasks for Company_A items, leaves others in inbox
 
 ### Example 3: Cross-Domain Task
 
-**Inbox:** "Integrate Shopify data into ExampleB for ExampleA analytics"
+**Inbox:** "Integrate e-commerce data into Company_B for Company_A analytics"
 
 **Output:**
 ```
 Created 2 linked tasks:
-- 02_Company_ExampleA/Tasks/shopify-data-export.md
-  (Extract Shopify data for ExampleB integration)
-- 03_Company_ExampleB/Tasks/integrate-shopify-data.md
-  (Build integration to receive ExampleA Shopify data)
+- 02_Company_A/Tasks/ecommerce-data-export.md
+  (Extract e-commerce data for Company_B integration)
+- 03_Company_B/Tasks/integrate-ecommerce-data.md
+  (Build integration to receive Company_A e-commerce data)
 Both tasks linked via related_tasks field.
 ```
 

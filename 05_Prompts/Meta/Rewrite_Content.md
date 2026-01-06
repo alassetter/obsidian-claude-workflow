@@ -16,23 +16,23 @@ Rewrite content in a specific style or voice, optimized for the domain.
 **Process:**
 
 1. **Identify context:**
-   - What domain is this for? (ExampleA, ExampleC, ExampleB, General)
+   - What domain is this for? (Company_A, Client_XYZ, Company_B, General)
    - What type of content? (product description, technical doc, client communication, etc.)
    - What style? (professional, casual, technical, marketing, brand-specific)
 
 2. **Load relevant guidelines:**
    
-   **If ExampleA:**
-   - Read `02_Company_ExampleA/Documentation/Brand-Voice-Guidelines.md` (if exists)
-   - Style: Western authenticity, rugged yet accessible, quality-focused
+   **If Company_A:**
+   - Read `02_Company_A/Documentation/Brand-Voice-Guidelines.md` (if exists)
+   - Style: Authentic, accessible, quality-focused
    
-   **If ExampleC:**
-   - Read `01_Clients/ExampleC/Documentation/Brand-Guidelines.md` (if exists)
+   **If Client_XYZ:**
+   - Read `01_Clients/Client_XYZ/Documentation/Brand-Guidelines.md` (if exists)
    - Style: Professional, clear, enterprise-appropriate
    
-   **If ExampleB:**
-   - Read `03_Company_ExampleB/Documentation/` relevant docs
-   - Style: Technical but user-friendly, real estate context
+   **If Company_B:**
+   - Read `03_Company_B/Documentation/` relevant docs
+   - Style: Technical but user-friendly, SaaS context
    
    **If General/Professional:**
    - Use standard professional business communication style
@@ -63,8 +63,8 @@ Rewrite content in a specific style or voice, optimized for the domain.
    - Compelling calls-to-action
    - Emotional appeal where appropriate
    
-   **ExampleA Brand:**
-   - Authentic western heritage
+   **Company_A Brand:**
+   - Authentic heritage
    - Quality and craftsmanship emphasis
    - Confident but not boastful
    - Storytelling when appropriate
@@ -94,31 +94,31 @@ User says:
 - `/rewrite`
 - `/rewrite [style]`
 - "Rewrite this professionally"
-- "Make this sound like ExampleA"
-- "Polish this for ExampleC"
+- "Make this sound like Company_A"
+- "Polish this for Client_XYZ"
 - "Make this more casual"
 
 ## Variables
 
-- `{{style}}`: professional | casual | technical | marketing | examplea | examplec
+- `{{style}}`: professional | casual | technical | marketing | companya | xyz
 - `{{content}}`: The text to rewrite (user provides or references)
 
 ## Examples
 
-### Example 1: Product Description (ExampleA)
+### Example 1: Content Description (Company_A)
 
 **Original:**
 ```
-This hat is really nice. Made from good quality felt. Comes in brown. Pretty comfortable to wear all day.
+This item is really nice. Made from good quality materials. Comes in brown. Pretty comfortable to use all day.
 ```
 
-**User:** `/rewrite examplea`
+**User:** `/rewrite companya`
 
 **Output:**
 ```
-**Rewritten (ExampleA Brand Voice):**
+**Rewritten (Company_A Brand Voice):**
 
-This premium felt hat embodies classic Western craftsmanship. Hand-shaped from superior quality wool felt, it delivers both authentic style and all-day comfort. Available in rich brown that only gets better with wear. Whether you're working the range or heading into town, this is the hat that goes the distance.
+This premium item embodies classic craftsmanship. Hand-crafted from superior quality materials, it delivers both authentic style and all-day comfort. Available in rich brown that only gets better with use. Whether you're working or relaxing, this is the item that goes the distance.
 
 **Changes:**
 - Added specific material details (wool felt)
@@ -201,7 +201,7 @@ Our software helps real estate agents. It has lots of features. You should try i
 ```
 **Rewritten (Marketing):**
 
-Transform your real estate business with ExampleB—the property management platform designed specifically for agents who demand more.
+Transform your business with Company_B—the SaaS platform designed specifically for professionals who demand more.
 
 Close deals faster with instant property insights, automated client communications, and market analytics that keep you ahead of the competition. Join thousands of successful agents who've already made the switch.
 
@@ -224,7 +224,7 @@ Close deals faster with instant property insights, automated client communicatio
 ## Related Prompts
 
 - [[Professional_Writer]] - General professional writing
-- [[Product_Description]] - ExampleA product writing
+- [[Content_Description]] - Company_A content writing
 - [[Content_Rewrite]] - Content-specific rewriting (if exists)
 
 ## Notes

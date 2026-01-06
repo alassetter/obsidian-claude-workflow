@@ -21,7 +21,7 @@ You have Obsidian MCP access. Save current work state as a checkpoint for resumi
    - Extract key activities and progress
 
 2. **Determine domain:**
-   - If clear from context (ExampleA, ExampleB, ExampleC, Development), use that
+   - If clear from context (Company_A, Company_B, Client_XYZ, Development), use that
    - If multi-domain session, create one checkpoint with all contexts
    - If unclear, ASK user which domain
 
@@ -125,13 +125,13 @@ User says:
 
 ### Example 1: Development Session
 
-**Session:** Working on ExampleB authentication for 2 hours
+**Session:** Working on Company_B authentication for 2 hours
 
 **User:** `/checkpoint`
 
 **Output:**
 ```
-Checkpoint saved: 09_Planning/2026-01-06-exampleb-auth-system-checkpoint.md
+Checkpoint saved: 09_Planning/2026-01-06-companyb-auth-system-checkpoint.md
 
 Summary: Built user authentication flow, decided on JWT approach, blocked on OAuth configuration.
 
@@ -143,15 +143,15 @@ Ready to switch context or done for the day?
 ---
 type: checkpoint
 date: 2026-01-06
-project: ExampleB
+project: Company_B
 session_duration: 2 hours
 status: blocked
 ---
 
-# ExampleB - Authentication System
+# Company_B - Authentication System
 
 ## What I Worked On
-Building user authentication for ExampleB platform. Focused on login flow, session management, and password reset functionality.
+Building user authentication for Company_B platform. Focused on login flow, session management, and password reset functionality.
 
 ## Decisions Made
 - Using JWT tokens for session management (instead of server-side sessions)
@@ -188,17 +188,17 @@ Can work on password reset flow while waiting, or pivot to property search UI.
 
 ### Example 2: Content Work
 
-**Session:** Writing ExampleA product descriptions
+**Session:** Writing Company_A content descriptions
 
 **User:** `/checkpoint`
 
 **Output:**
 ```
-Checkpoint saved: 09_Planning/2026-01-06-examplea-product-descriptions-checkpoint.md
+Checkpoint saved: 09_Planning/2026-01-06-companya-content-descriptions-checkpoint.md
 
-Summary: Completed 6 of 10 fall collection product descriptions using brand voice guidelines.
+Summary: Completed 6 of 10 seasonal collection content descriptions using brand voice guidelines.
 
-Continue with remaining 4 products or switch context?
+Continue with remaining 4 items or switch context?
 ```
 
 **Checkpoint File:**
@@ -206,46 +206,46 @@ Continue with remaining 4 products or switch context?
 ---
 type: checkpoint
 date: 2026-01-06
-project: ExampleA
+project: Company_A
 session_duration: 1.5 hours
 status: in-progress
 ---
 
-# ExampleA - Fall Collection Product Descriptions
+# Company_A - Seasonal Collection Content Descriptions
 
 ## What I Worked On
-Writing optimized product descriptions for fall 2026 collection launch. Applied brand voice guidelines and SEO keywords.
+Writing optimized content descriptions for seasonal 2026 collection launch. Applied brand voice guidelines and SEO keywords.
 
 ## Decisions Made
-- Focus on craftsmanship and heritage in descriptions
-- Include care instructions for each product
-- SEO keywords: "premium western wear", "handcrafted", "authentic"
-- Keep descriptions 100-150 words for optimal Shopify display
+- Focus on craftsmanship and quality in descriptions
+- Include care instructions for each item
+- SEO keywords: "premium", "handcrafted", "authentic"
+- Keep descriptions 100-150 words for optimal e-commerce display
 
 ## Progress
-- [x] Cattle Baron Felt Hat (SKU: HAT-001)
-- [x] Wrangler Leather Belt (SKU: BELT-003)
-- [x] Prairie Denim Jacket (SKU: JACK-015)
-- [x] Homestead Work Boot (SKU: BOOT-022)
-- [x] Frontier Flannel Shirt (SKU: SHIRT-041)
-- [x] Outlaw Leather Vest (SKU: VEST-008)
-- [ ] Canyon Ridge Hat (SKU: HAT-009)
-- [ ] Silverado Buckle (SKU: ACC-014)
-- [ ] Mesa Jean (SKU: JEAN-031)
-- [ ] Trailblazer Jacket (SKU: JACK-019)
+- [x] Item 001 (SKU: ITM-001)
+- [x] Item 003 (SKU: ITM-003)
+- [x] Item 015 (SKU: ITM-015)
+- [x] Item 022 (SKU: ITM-022)
+- [x] Item 041 (SKU: ITM-041)
+- [x] Item 008 (SKU: ITM-008)
+- [ ] Item 009 (SKU: ITM-009)
+- [ ] Item 014 (SKU: ITM-014)
+- [ ] Item 031 (SKU: ITM-031)
+- [ ] Item 019 (SKU: ITM-019)
 
 ## Next Steps
-1. Complete remaining 4 product descriptions
+1. Complete remaining 4 content descriptions
 2. Have descriptions reviewed for brand consistency
-3. Upload to Shopify
-4. Add product images (separate task)
-5. Set up product collections in Shopify
+3. Upload to e-commerce platform
+4. Add content images (separate task)
+5. Set up product collections
 
 ## Questions/Blockers
 None - workflow is smooth
 
 ## Context for Next Session
-- Brand voice doc: 02_Company_ExampleA/Documentation/Brand-Voice-Guidelines.md
+- Brand voice doc: 02_Company_A/Documentation/Brand-Voice-Guidelines.md
 - Target word count: 100-150 words
 - Format: Brief hook → Features → Craftsmanship → Care
 - All products in "Fall 2026" collection
@@ -261,7 +261,7 @@ None - workflow is smooth
 ```
 Checkpoint saved: 09_Planning/2026-01-06-multi-domain-checkpoint.md
 
-Summary: ExampleC meeting prep (done), ExampleA descriptions (6/10), ExampleB planning started.
+Summary: Client_XYZ meeting prep (done), Company_A descriptions (6/10), Company_B planning started.
 
 Typical interrupt-driven day! Where do you want to focus next?
 ```

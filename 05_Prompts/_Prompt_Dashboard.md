@@ -21,22 +21,22 @@ Your master index of all reusable prompts, organized by category and domain.
 
 ## 📁 By Domain
 
-### ExampleA
-*Product descriptions, brand voice, Shopify operations*
+### Company_A
+*Content creation, brand voice, e-commerce operations*
 
 **Writing:**
-- Professional_Writer (if tagged ExampleA)
+- Professional_Writer (if tagged Company_A)
 
 **Analysis:**
-- (Add Shopify analytics prompts here)
+- (Add e-commerce analytics prompts here)
 
 **To Be Created:**
-- Product_Description_Writer
+- Content_Description_Writer
 - Brand_Voice_Check
-- Shopify_Analytics
+- E-commerce_Analytics
 
-### ExampleB
-*Real estate software development*
+### Company_B
+*SaaS platform development*
 
 **Coding:**
 - Senior_Engineer (General, but used heavily here)
@@ -46,8 +46,8 @@ Your master index of all reusable prompts, organized by category and domain.
 - Code_Review_Checklist
 - Architecture_Discussion
 
-### ExampleC
-*Enterprise intranet, IA, content*
+### Client_XYZ
+*Enterprise project, IA, content*
 
 **Writing:**
 - Professional_Writer (General)
@@ -153,9 +153,9 @@ Your master index of all reusable prompts, organized by category and domain.
 
 When adding domain tags to prompts, use these values:
 
-- **ExampleA** (ea) - Western wear business
-- **ExampleB** (eb) - Real estate software
-- **ExampleC** (examplec) - Enterprise intranet client
+- **Company_A** (ca) - E-commerce business
+- **Company_B** (cb) - SaaS platform
+- **Client_XYZ** (xyz) - Enterprise project client
 - **Development** (dev) - Learning and skill building
 - **General** - Applicable across all domains
 
@@ -171,7 +171,7 @@ From Analysis:
 - [ ] Test Prompt.md - Review if needed, add domain or remove
 
 From Business:
-- [ ] Client_Summary.md - Add domain tag (probably General or ExampleC)
+- [ ] Client_Summary.md - Add domain tag (probably General or Client_XYZ)
 
 From Coding:
 - [ ] Senior_Engineer.md - Add domain tag (probably General)
@@ -193,18 +193,18 @@ From Meta:
 
 ## 🎨 Prompt Creation Ideas
 
-**For ExampleA:**
-- Product_Description_Writer - Craft compelling product descriptions
+**For Company_A:**
+- Content_Description_Writer - Craft compelling content descriptions
 - Brand_Voice_Check - Verify brand consistency
-- Shopify_Analytics - Analyze store performance
+- E-commerce_Analytics - Analyze store performance
 - Marketing_Email - Product launch emails
 
-**For ExampleB:**
+**For Company_B:**
 - Code_Review_Checklist - Comprehensive code review
 - Architecture_Discussion - Discuss technical decisions
 - Feature_Spec_Writer - Document feature specifications
 
-**For ExampleC:**
+**For Client_XYZ:**
 - Content_Rewriter - Enterprise content polish
 - IA_Advisor - Information architecture guidance
 - Meeting_Prep - Prepare for client meetings
@@ -246,9 +246,9 @@ From Meta:
 
 **By Domain:**
 - General: 13+ (most prompts)
-- ExampleA: 0 (need to create)
-- ExampleB: 0 (need to create)
-- ExampleC: 0 (need to create)
+- Company_A: 0 (need to create)
+- Company_B: 0 (need to create)
+- Client_XYZ: 0 (need to create)
 - Development: 0 (tagged as general)
 
 ---
@@ -256,7 +256,7 @@ From Meta:
 ## 💡 Usage Tips
 
 **Quick Capture (NEW!):**
-- `/inbox examplec create page` - Instant append to planning inbox
+- `/inbox xyz create page` - Instant append to planning inbox
 - No need to open files manually
 - Run `/organize` when ready to process
 
@@ -268,7 +268,7 @@ From Meta:
 
 **Finding Prompts:**
 - Use `/prompt find [keyword]`
-- Use `/prompt find domain:examplea`
+- Use `/prompt find domain:companya`
 - Use `/prompt find category:writing`
 - Browse this dashboard
 

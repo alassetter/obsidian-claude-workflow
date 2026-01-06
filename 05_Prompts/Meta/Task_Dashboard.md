@@ -126,7 +126,7 @@ h1 { color: #333; margin-bottom: 10px; }
   <div class="section">
     <h2>🚨 Urgent (1)</h2>
     <div class="task urgent">
-      <div class="task-title">[ExampleC] prepare-ia-review-meeting</div>
+      <div class="task-title">[Client_XYZ] prepare-ia-review-meeting</div>
       <div class="task-meta">Due: 2026-01-10 (Friday)</div>
     </div>
   </div>

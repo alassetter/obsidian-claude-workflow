@@ -25,10 +25,10 @@ A production-ready knowledge management and task workflow system integrating Obs
 
 ### Daily Workflow Commands
 ```bash
-/inbox examplec create employment page      # Quick capture (no file opening!)
+/inbox xyz create landing page          # Quick capture (no file opening!)
 /organize                               # Process inbox → structured tasks
 /dashboard                              # Beautiful HTML task overview
-/load examplea                        # Load full domain context
+/load companya                          # Load full domain context
 /tasks priority:high                    # Show filtered tasks
 /checkpoint                             # Save work state before switching
 ```
@@ -51,7 +51,8 @@ A production-ready knowledge management and task workflow system integrating Obs
 
 ### Prerequisites
 - [Obsidian](https://obsidian.md/) 1.5+
-- [Claude Desktop](https://claude.ai/download) with MCP support
+- [Claude Desktop](https://claude.ai/download) with MCP support (⚠️ **Claude Web doesn't work - Desktop only!**)
+- Node.js (for MCP)
 - Git (for version control)
 
 ### Installation
@@ -67,24 +68,29 @@ cd obsidian-claude-workflow
    - "Open folder as vault"
    - Select the cloned directory
 
-3. **Install recommended plugins:**
+3. **Set up Claude ↔ Obsidian MCP connection:** ⚡ **CRITICAL STEP**
+   - See **[MCP_SETUP.md](MCP_SETUP.md)** for complete MCP configuration
+   - Install Obsidian Local REST API plugin
+   - Configure Claude Desktop MCP
+   - **This is what powers all the slash commands!**
+
+4. **Install recommended plugins (optional):**
    - See [PLUGINS.md](PLUGINS.md) for full list
    - Core system works without plugins!
 
-4. **Configure Claude Desktop:**
-   - See [SETUP.md](SETUP.md) for detailed instructions
-   - See [CLAUDE_PROJECTS.md](00_System/Claude_Projects.md) for project mapping
-
 5. **Test the system:**
 ```bash
-# In Obsidian, open any note and talk to Claude:
+# In Claude Desktop (not web!), try:
 /help                    # See all commands
 /inbox test task         # Quick capture
 /organize                # Process inbox
 /dashboard               # View tasks
 ```
 
-📖 **Full setup guide:** [SETUP.md](SETUP.md)
+📖 **Full guides:**
+- **[MCP_SETUP.md](MCP_SETUP.md)** - Claude ↔ Obsidian connection (START HERE!)
+- [SETUP.md](SETUP.md) - Complete installation guide
+- [PLUGINS.md](PLUGINS.md) - Plugin recommendations
 
 ---
 
@@ -116,7 +122,9 @@ obsidian-claude-workflow/
 ├── 07_Personal/            # Personal notes (gitignored)
 ├── 09_Planning/            # Planning inbox
 │   └── inbox.md            # Brain dump here!
-└── README.md               # This file
+├── README.md               # This file
+├── MCP_SETUP.md            # Claude ↔ Obsidian connection
+└── SETUP.md                # Full installation guide
 ```
 
 ---
@@ -142,12 +150,12 @@ See [Quick_Reference.md](00_System/Quick_Reference.md) for complete documentatio
 ## 🏷️ Domain Shortcuts
 
 Use full names or shortcuts:
-- **ExampleA** → `ea`
-- **ExampleB** → `eb`
-- **ExampleC** → `examplec`
+- **Company_A** → `ca`
+- **Company_B** → `cb`
+- **Client_XYZ** → `xyz`
 - **Development** → `dev`
 
-Example: `/load ea` = `/load examplea`
+Example: `/load ca` = `/load companya`
 
 ---
 
@@ -156,21 +164,21 @@ Example: `/load ea` = `/load examplea`
 ### Morning
 ```bash
 /dashboard              # See what's urgent, what's blocked
-/load examplec             # Dive into most urgent domain
+/load xyz              # Dive into most urgent domain
 ```
 
 ### Throughout Day
 ```bash
-/inbox examplec prep meeting tomorrow
-/inbox ea update product descriptions
+/inbox xyz prep meeting tomorrow
+/inbox ca update content
 /inbox research new AI tools
 # Keep working, capture as you go
 ```
 
 ### Context Switching
 ```bash
-/checkpoint            # Save ExampleC work state
-/load examplea      # Switch to ExampleA
+/checkpoint            # Save Client_XYZ work state
+/load companya        # Switch to Company_A
 # Claude shows where you left off
 ```
 
@@ -208,6 +216,7 @@ Edit templates in `00_System/Templates/` to match your workflow.
 
 ## 📚 Documentation
 
+- **[MCP_SETUP.md](MCP_SETUP.md)** - ⚡ Claude ↔ Obsidian MCP connection (CRITICAL!)
 - **[SETUP.md](SETUP.md)** - Detailed installation and configuration
 - **[PLUGINS.md](PLUGINS.md)** - Required and recommended Obsidian plugins
 - **[Quick_Reference.md](00_System/Quick_Reference.md)** - Command cheat sheet
@@ -242,12 +251,14 @@ Contributions welcome! This system can be adapted for:
 ## 🐛 Troubleshooting
 
 ### Claude doesn't see my files
-- Check MCP server configuration in Claude Desktop
-- Verify Obsidian MCP server is running
-- Check file paths in Claude Desktop project
+- **Most common:** MCP not configured - see [MCP_SETUP.md](MCP_SETUP.md)
+- Check Obsidian Local REST API plugin is enabled
+- Verify API key in Claude config
+- Ensure Obsidian is running
 
 ### Commands don't work
-- Ensure you're using the correct slash command syntax
+- Ensure you're using **Claude Desktop**, not Claude Web
+- Verify MCP connection is working
 - Try natural language: "organize my inbox"
 - Check [Quick_Reference.md](00_System/Quick_Reference.md)
 
@@ -256,7 +267,7 @@ Contributions welcome! This system can be adapted for:
 - Verify domain names match conventions
 - See [Conventions.md](00_System/Conventions.md)
 
-**More help:** See [SETUP.md](SETUP.md) troubleshooting section
+**More help:** See [MCP_SETUP.md](MCP_SETUP.md) and [SETUP.md](SETUP.md) troubleshooting sections
 
 ---
 
@@ -284,6 +295,7 @@ Contributions welcome! This system can be adapted for:
 ## 🎓 Learning Path
 
 **Week 1: Get Comfortable**
+- Set up MCP connection ([MCP_SETUP.md](MCP_SETUP.md))
 - Use inbox for brain dumping
 - Run `/organize` daily
 - Use `/load` when switching contexts
@@ -348,6 +360,7 @@ Built with:
 - [Obsidian](https://obsidian.md/) - The extensible knowledge base
 - [Claude](https://claude.ai/) - AI assistant by Anthropic
 - [MCP](https://modelcontextprotocol.io/) - Model Context Protocol
+- [Obsidian Local REST API](https://github.com/coddingtonbear/obsidian-local-rest-api) - By Adam Coddington
 
 Inspired by:
 - GTD (Getting Things Done)
@@ -359,10 +372,21 @@ Inspired by:
 
 ## 🚀 Get Started
 
-1. **[Install the system](SETUP.md)**
-2. **[Read the quick reference](00_System/Quick_Reference.md)**
-3. **[Configure Claude Desktop](00_System/Claude_Projects.md)**
+1. **[Set up Claude ↔ Obsidian MCP](MCP_SETUP.md)** ⚡ START HERE
+2. **[Install the system](SETUP.md)**
+3. **[Read the quick reference](00_System/Quick_Reference.md)**
 4. **Start brain dumping!**
 
 ---
 
+## 💬 Community & Support
+
+- **Issues:** [GitHub Issues](https://github.com/yourusername/obsidian-claude-workflow/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/yourusername/obsidian-claude-workflow/discussions)
+- **Questions:** Open a discussion or issue
+
+---
+
+**Built by knowledge workers, for knowledge workers.**
+
+*Stop fighting your tools. Start flowing with them.* ✨

@@ -1,7 +1,7 @@
 ---
 type: prompt
 category: [Analysis | Business | Coding | Meta | Writing]
-domain: [ExampleA | ExampleB | ExampleC | Development | General]
+domain: [Company_A | Company_B | Client_XYZ | Development | General]
 reuse: [high | medium | low]
 audience: [ai | human]
 created: {{date}}

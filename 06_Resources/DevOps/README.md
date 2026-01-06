@@ -19,5 +19,5 @@ This folder contains process, infrastructure, and deployment documentation.
 
 ## Cross-Domain Resource
 This is general DevOps knowledge. For project-specific infrastructure, see:
-- `03_Company_ExampleB/Documentation/` for ExampleB deployment
+- `03_Company_B/Documentation/` for Company_B deployment
 - `04_Development/Documentation/` for your DevOps learnings

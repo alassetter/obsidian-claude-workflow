@@ -31,7 +31,7 @@ You have Obsidian MCP access. Extract a reusable prompt pattern from the current
    - Based on what the prompt does
    
    **Domain:**
-   - ExampleA, ExampleB, ExampleC, Development, or General?
+   - Company_A, Company_B, Client_XYZ, Development, or General?
    - General if applicable across domains
    
    **Reuse potential:**
@@ -109,38 +109,38 @@ User says:
 
 - `{{prompt_name}}`: User-specified or suggested name
 - `{{category}}`: Analysis, Business, Coding, Meta, Writing
-- `{{domain}}`: ExampleA, ExampleB, ExampleC, Development, General
+- `{{domain}}`: Company_A, Company_B, Client_XYZ, Development, General
 
 ## Examples
 
 ### Example 1: Saving Product Description Prompt
 
-**Context:** User just had Claude write a great ExampleA product description
+**Context:** User just had Claude write a great Company_A content description
 
 **User:** `/prompt save`
 
-**Claude:** "I'll save that product description pattern. What should I call it?"
+**Claude:** "I'll save that content description pattern. What should I call it?"
 
-**User:** "Product Description Writer"
+**User:** "Content Description Writer"
 
 **Claude:** "Got it. Which category? I'm thinking Writing. Correct?"
 
 **User:** "Yes"
 
-**Claude:** "Domain? This seems ExampleA-specific. Correct?"
+**Claude:** "Domain? This seems Company_A-specific. Correct?"
 
 **User:** "Yes"
 
 **Output:**
 ```
-Created: 05_Prompts/Writing/Product_Description_Writer.md
+Created: 05_Prompts/Writing/Content_Description_Writer.md
 
-Prompt saved for writing ExampleA product descriptions.
+Prompt saved for writing Company_A content descriptions.
 
-Use it by saying: "Use my product description prompt for [product]"
-Or: /prompt use product-description
+Use it by saying: "Use my content description prompt for [item]"
+Or: /prompt use content-description
 
-Added to Prompt Dashboard under Writing > ExampleA.
+Added to Prompt Dashboard under Writing > Company_A.
 ```
 
 **Saved Prompt File:**
@@ -148,7 +148,7 @@ Added to Prompt Dashboard under Writing > ExampleA.
 ---
 type: prompt
 category: Writing
-domain: ExampleA
+domain: Company_A
 reuse: high
 audience: ai
 created: 2026-01-06
@@ -158,14 +158,14 @@ use_count: 1
 
 ## Prompt
 
-Write a compelling product description for {{product_name}} that embodies ExampleA's brand voice.
+Write a compelling content description for {{item_name}} that embodies Company_A's brand voice.
 
-Read brand guidelines from: 02_Company_ExampleA/Documentation/Brand-Voice-Guidelines.md
+Read brand guidelines from: 02_Company_A/Documentation/Brand-Voice-Guidelines.md
 
 Include:
-- Attention-grabbing opening (Western authenticity)
+- Attention-grabbing opening
 - Key features and materials
-- Craftsmanship and quality emphasis
+- Quality emphasis
 - Care instructions
 - SEO-friendly keywords
 
@@ -173,7 +173,7 @@ Target length: 100-150 words
 
 ## When to Use
 
-When adding new products to ExampleA's Shopify store or updating existing product descriptions.
+When adding new items to Company_A's e-commerce store or updating existing content descriptions.
 
 ## Variables
 
@@ -217,7 +217,7 @@ Saved your code review pattern with the comprehensive checklist.
 
 Use: "Review this code using my checklist" or /prompt use code-review
 
-Added to Prompt Dashboard under Coding > ExampleB.
+Added to Prompt Dashboard under Coding > Company_B.
 ```
 
 ### Example 3: Already Exists

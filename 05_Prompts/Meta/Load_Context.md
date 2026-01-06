@@ -17,7 +17,7 @@ You have Obsidian MCP access. Load complete context for a domain so user can sta
 
 1. **Identify domain:**
    - User says `/load [domain]` or "load context for [domain]"
-   - Accept full names OR shortcuts: ExampleA/ea, ExampleB/eb, ExampleC/examplec, Development/dev
+   - Accept full names OR shortcuts: Company_A/ca, Company_B/cb, Client_XYZ/xyz, Development/dev
 
 2. **Read these files in order:**
    
@@ -82,44 +82,44 @@ You have Obsidian MCP access. Load complete context for a domain so user can sta
 User says:
 - `/load [domain]`
 - `/load` (ask which domain)
-- "Load context for ExampleA"
-- "Switch to ExampleC work"
-- "Where were we on ExampleB?"
+- "Load context for Company_A"
+- "Switch to Client_XYZ work"
+- "Where were we on Company_B?"
 - "What's going on with [domain]?"
 
 ## Variables
 
-- `{{domain}}`: Required - ExampleA/ea, ExampleB/eb, ExampleC/examplec, Development/dev
+- `{{domain}}`: Required - Company_A/ca, Company_B/cb, Client_XYZ/xyz, Development/dev
 - `--deep` flag: Read all documentation too (more comprehensive)
 - `--tasks-only` flag: Just show tasks, skip planning
 
 ## Examples
 
-### Example 1: Load ExampleA
+### Example 1: Load Company_A
 
-**User:** `/load examplea`
+**User:** `/load companya`
 
 **Output:**
 ```
-Switch to Claude Desktop project: 'ExampleA Shopify'
+Switch to Claude Desktop project: 'Company A Project'
 
 ## Current State
-- B2C/B2B western wear business via Shopify
-- Fall collection launching soon
-- Focus: Product descriptions + inventory optimization
+- B2C/B2B e-commerce business
+- Seasonal collection launching soon
+- Focus: Content creation + inventory optimization
 
 ## Active Work
 Planning:
-- Fall-2026-Product-Launch.md (in progress)
+- Seasonal-2026-Product-Launch.md (in progress)
 - Q1-Marketing-Strategy.md (active)
 
 ## Today's Priority
 HIGH:
-- update-product-descriptions.md (10 products need copy)
-- optimize-product-images.md (fall collection)
+- update-content-descriptions.md (10 items need copy)
+- optimize-content-images.md (seasonal collection)
 
 MEDIUM:
-- shopify-inventory-audit.md
+- inventory-audit.md
 - review-abandoned-carts.md
 
 ## Blockers
@@ -127,22 +127,22 @@ None currently
 
 ## Available Context
 - Brand-Voice-Guidelines.md
-- Product-Photography-Process.md
-- Shopify-Workflow.md
+- Content-Photography-Process.md
+- E-commerce-Workflow.md
 
 What do you want to work on?
 ```
 
 ### Example 2: Load with Blocker
 
-**User:** `/load exampleb`
+**User:** `/load companyb`
 
 **Output:**
 ```
-Switch to Claude Desktop project: 'exampleb'
+Switch to Claude Desktop project: 'Company B Project'
 
 ## Current State
-- Real estate software in active development
+- SaaS platform in active development
 - Tech: React, Node.js, PostgreSQL
 - Phase: Building user authentication system
 

@@ -15,31 +15,29 @@ When you switch domains in your work, you should switch Claude Desktop projects 
 
 | Vault Domain | Claude Desktop Project | Purpose |
 |--------------|----------------------|---------|
-| 02_Company_ExampleA | **ExampleA Shopify** | Shopify operations, products, B2C/B2B |
-| 01_Clients/ExampleC | **ExampleC** | Enterprise intranet, IA, content |
-| 03_Company_ExampleB | **exampleb** | Real estate software development |
-| 04_Development | **ClaudeKit** | Learning, experiments, skill building |
-
-*Note: ExampleA Shopify project handles Shopify operations for ExampleA.*
+| 02_Company_A | **Company A Project** | E-commerce operations, products, B2C/B2B |
+| 01_Clients/Client_XYZ | **Client XYZ Project** | Enterprise project, IA, content |
+| 03_Company_B | **Company B Project** | SaaS platform development |
+| 04_Development | **Development Project** | Learning, experiments, skill building |
 
 ## 🔄 Switching Workflow
 
 ### When Claude Tells You to Switch
 
 ```
-You: /load examplea
+You: /load companya
 
-Claude: "Switch to Claude Desktop project: 'ExampleA Shopify'
+Claude: "Switch to Claude Desktop project: 'Company A Project'
          
          Context loaded:
-         - Last worked on: Product descriptions
-         - 10 products need updating
-         - Focus: Western wear fall collection
+         - Last worked on: Content creation
+         - 10 items need updating
+         - Focus: Seasonal products
          
          What do you want to work on?"
 
-You: [Switch to "ExampleA Shopify" project in Claude Desktop]
-     [Continue conversation with full context + Shopify MCP]
+You: [Switch to "Company A Project" project in Claude Desktop]
+     [Continue conversation with full context + MCP]
 ```
 
 ### Manual Switching
@@ -52,24 +50,24 @@ When you start working on a specific domain:
 
 ## 🔧 MCP Servers Per Project
 
-### ExampleA Shopify
+### Company A Project
 **Available MCP Servers:**
-- Shopify MCP - Product management, orders, inventory
-- Filesystem MCP - Access to ExampleA files
+- E-commerce MCP - Product management, orders, inventory
+- Filesystem MCP - Access to Company_A files
 - Git MCP - Version control
 - Obsidian MCP - This vault
 
 **Common Tasks:**
-- Product description updates
+- Content creation
 - Inventory analysis
 - Order management
 - Marketing copy generation
 
-### ExampleC
+### Client XYZ Project
 **Available MCP Servers:**
-- Filesystem MCP - Access to ExampleC files
+- Filesystem MCP - Access to Client_XYZ files
 - Obsidian MCP - This vault
-- (Add Google Drive MCP if needed for ExampleC docs)
+- (Add Google Drive MCP if needed for Client_XYZ docs)
 
 **Common Tasks:**
 - Content rewriting
@@ -77,7 +75,7 @@ When you start working on a specific domain:
 - Meeting prep
 - Documentation organization
 
-### exampleb (ExampleB)
+### Company B Project
 **Available MCP Servers:**
 - Filesystem MCP - Access to code repositories
 - Git MCP - Version control
@@ -90,7 +88,7 @@ When you start working on a specific domain:
 - Feature specification
 - Technical documentation
 
-### ClaudeKit (Development/Learning)
+### Development Project (Development/Learning)
 **Available MCP Servers:**
 - Filesystem MCP - Access to learning projects
 - Git MCP - Version control
@@ -114,25 +112,25 @@ For each Claude Desktop project, ensure:
 
 ## 🔗 Quick Links
 
-### ExampleA Shopify
-- Vault: `02_Company_ExampleA/`
-- Context: `02_Company_ExampleA/Project_Context.md`
-- Tasks: `02_Company_ExampleA/Tasks/`
-- Docs: `02_Company_ExampleA/Documentation/`
+### Company A Project
+- Vault: `02_Company_A/`
+- Context: `02_Company_A/Project_Context.md`
+- Tasks: `02_Company_A/Tasks/`
+- Docs: `02_Company_A/Documentation/`
 
-### ExampleC
-- Vault: `01_Clients/ExampleC/`
-- Context: `01_Clients/ExampleC/Project_Context.md`
-- Tasks: `01_Clients/ExampleC/Tasks/`
-- Docs: `01_Clients/ExampleC/Documentation/`
+### Client XYZ Project
+- Vault: `01_Clients/Client_XYZ/`
+- Context: `01_Clients/Client_XYZ/Project_Context.md`
+- Tasks: `01_Clients/Client_XYZ/Tasks/`
+- Docs: `01_Clients/Client_XYZ/Documentation/`
 
-### exampleb (ExampleB)
-- Vault: `03_Company_ExampleB/`
-- Context: `03_Company_ExampleB/Project_Context.md`
-- Tasks: `03_Company_ExampleB/Tasks/`
-- Docs: `03_Company_ExampleB/Documentation/`
+### Company B Project
+- Vault: `03_Company_B/`
+- Context: `03_Company_B/Project_Context.md`
+- Tasks: `03_Company_B/Tasks/`
+- Docs: `03_Company_B/Documentation/`
 
-### ClaudeKit (Development)
+### Development Project
 - Vault: `04_Development/`
 - Context: `04_Development/Project_Context.md`
 - Tasks: `04_Development/Tasks/`
@@ -158,16 +156,16 @@ For each Claude Desktop project, ensure:
 - Checkpoints help you resume in each context
 
 **MCP Server Issues:**
-- If Claude can't access Shopify: Check you're in "ExampleA Shopify" project
+- If Claude can't access e-commerce tools: Check you're in "Company A Project" project
 - If Claude can't see files: Check filesystem MCP is configured
 - If Obsidian isn't working: Check MCP connection in all projects
 
 ## 🚧 To Be Configured
 
 These items need setup (circle back later):
-- [ ] Confirm which ExampleA project is for what
+- [ ] Confirm which "Company A" project is for what
 - [ ] Document specific MCP servers in each project
-- [ ] Add Google Drive MCP for ExampleC if needed
+- [ ] Add Google Drive MCP for Client_XYZ if needed
 - [ ] Test context loading in each project
 - [ ] Add custom instructions to each project
 

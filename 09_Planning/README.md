@@ -16,20 +16,20 @@ This is your **planning inbox** - the central place where you brain dump everyth
 1. Say: `/organize`
 2. Claude reads your inbox
 3. Creates proper task files in the right domains:
-   - ExampleA tasks → `02_Company_ExampleA/Tasks/`
-   - ExampleC tasks → `01_Clients/ExampleC/Tasks/`
-   - ExampleB tasks → `03_Company_ExampleB/Tasks/`
+   - Company_A tasks → `02_Company_A/Tasks/`
+   - Client_XYZ tasks → `01_Clients/Client_XYZ/Tasks/`
+   - Company_B tasks → `03_Company_B/Tasks/`
    - Dev learning → `04_Development/Tasks/`
 4. Claude asks if you want to archive the inbox
 
 ### What Goes in the Inbox
 
 **Everything! Examples:**
-- "Need to update 10 product descriptions for ExampleA"
-- "ExampleC wants IA review meeting prep"
-- "Continue ExampleB user dashboard"
-- "Research letta.com for memory management"
-- "Review that Shopify analytics report"
+- "Need to update 10 content descriptions for Company_A"
+- "Client_XYZ wants IA review meeting prep"
+- "Continue Company_B user dashboard"
+- "Research new tools for memory management"
+- "Review that e-commerce analytics report"
 - "Learn how to use Claude skills"
 
 **Don't worry about:**
@@ -69,14 +69,14 @@ Claude will figure all that out when you run `/organize`.
 **Brain Dump Format:**
 Just write naturally! These all work:
 ```
-Tomorrow: ExampleA product descriptions, ExampleC nav review
+Tomorrow: Company_A content descriptions, Client_XYZ nav review
 
 Need to:
-- Update product photos
-- Review ExampleB auth system
-- Schedule ExampleC meeting
+- Update content photos
+- Review Company_B auth system
+- Schedule Client_XYZ meeting
 
-Random thoughts: Maybe integrate Shopify data into ExampleB?
+Random thoughts: Maybe integrate e-commerce data into Company_B?
 ```
 
 **Cross-Domain Tasks:**

@@ -11,7 +11,7 @@ use_count: 0
 
 ## Prompt
 
-You have Obsidian MCP aeaess. Show the user available commands and how to use the system.
+You have Obsidian MCP access. Show the user available commands and how to use the system.
 
 **Process:**
 
@@ -30,7 +30,7 @@ You have Obsidian MCP aeaess. Show the user available commands and how to use th
    Examples:
    - `/help organize` → Details on /organize command
    - `/help tasks` → All task-related commands
-   - `/help examplea` → Commands relevant to ExampleA work
+   - `/help companya` → Commands relevant to Company_A work
 
 3. **Core help content:**
    
@@ -129,7 +129,7 @@ User says:
 **Prompts:** /prompt find, /prompt save, /prompt use
 
 ## 🏷️ Domain Shortcuts
-ExampleA→ea, ExampleB→eb, ExampleC→examplec, Development→dev
+Company_A→ca, Company_B→cb, Client_XYZ→xyz, Development→dev
 
 ## 📖 Detailed Docs
 - Quick_Reference.md - All commands with examples
@@ -158,7 +158,7 @@ Reads your planning inbox (09_Planning/inbox.md) and creates structured task fil
 
 **Usage:**
 - `/organize` → Process everything in inbox
-- `/organize examplea` → Process only ExampleA items
+- `/organize companya` → Process only Company_A items
 
 **What it does for you:**
 1. Reads your brain dump
@@ -168,12 +168,12 @@ Reads your planning inbox (09_Planning/inbox.md) and creates structured task fil
 5. Asks if you want to archive the inbox
 
 **Example:**
-Inbox: "Update 10 product descriptions, prep ExampleC meeting, continue ExampleB auth"
+Inbox: "Update 10 content items, prep Client_XYZ meeting, continue Company_B auth"
 
 Result: Creates 3 separate task files:
-- 02_Company_ExampleA/Tasks/update-product-descriptions.md
-- 01_Clients/ExampleC/Tasks/prepare-meeting.md
-- 03_Company_ExampleB/Tasks/continue-auth-system.md
+- 02_Company_A/Tasks/update-content.md
+- 01_Clients/Client_XYZ/Tasks/prepare-meeting.md
+- 03_Company_B/Tasks/continue-auth-system.md
 
 **Tips:**
 - Run daily at end of day
@@ -218,7 +218,7 @@ More help needed?
 
 ### Example 4: Context-Sensitive
 
-**User:** "I'm trying to switch from ExampleC work to ExampleA"
+**User:** "I'm trying to switch from Client_XYZ work to Company_A"
 
 **Output:**
 ```
@@ -228,14 +228,14 @@ To switch contexts:
    `/checkpoint`
    
 2. **Load new context:**
-   `/load examplea` or `/load ea`
+   `/load companya` or `/load ca`
    
 3. **Switch Claude Desktop project:**
-   When prompted, switch to "ExampleA Shopify" project
+   When prompted, switch to "Company A Project" project
 
-That's it! Claude will load all ExampleA context and you're ready to work.
+That's it! Claude will load all Company_A context and you're ready to work.
 
-**Pro tip:** The checkpoint helps you pick up ExampleC work later exactly where you left off.
+**Pro tip:** The checkpoint helps you pick up Client_XYZ work later exactly where you left off.
 
 Try it now?
 ```
@@ -253,9 +253,9 @@ Throughout today, dump ALL tasks/ideas into:
 📝 09_Planning/inbox.md
 
 Don't organize, just dump. Like this:
-"Update ExampleA products
-ExampleC meeting prep
-ExampleB auth work
+"Update Company_A content
+Client_XYZ meeting prep
+Company_B auth work
 Research new framework"
 
 ## End of Day: Organize
@@ -267,7 +267,7 @@ Claude will:
 ✅ Ask about archiving
 
 ## Tomorrow: Load & Work
-Say: `/load examplea`
+Say: `/load companya`
 
 Claude shows:
 - Where you left off

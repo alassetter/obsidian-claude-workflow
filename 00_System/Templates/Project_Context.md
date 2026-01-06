@@ -1,6 +1,6 @@
 ---
 type: project_context
-domain: [ExampleA | ExampleB | ExampleC | Development]
+domain: [Company_A | Company_B | Client_XYZ | Development]
 claude_project: 
 claude_project_url: 
 status: active
