@@ -79,7 +79,7 @@ Pull on startup: On
 # Initialize git in your vault (if not cloned)
 cd /path/to/vault
 git init
-git remote add origin https://github.com/yourusername/obsidian-claude-workflow.git
+git remote add origin https://github.com/alassetter/obsidian-claude-workflow.git
 
 # Obsidian Git will handle commits/pushes automatically
 ```

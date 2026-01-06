@@ -59,7 +59,7 @@ A production-ready knowledge management and task workflow system integrating Obs
 
 1. **Clone this repository:**
 ```bash
-git clone https://github.com/yourusername/obsidian-claude-workflow.git
+git clone https://github.com/alassetter/obsidian-claude-workflow.git
 cd obsidian-claude-workflow
 ```
 
@@ -379,14 +379,3 @@ Inspired by:
 
 ---
 
-## 💬 Community & Support
-
-- **Issues:** [GitHub Issues](https://github.com/yourusername/obsidian-claude-workflow/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/obsidian-claude-workflow/discussions)
-- **Questions:** Open a discussion or issue
-
----
-
-**Built by knowledge workers, for knowledge workers.**
-
-*Stop fighting your tools. Start flowing with them.* ✨

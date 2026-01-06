@@ -74,7 +74,7 @@ Complete installation and configuration guide for the Obsidian + Claude workflow
 cd ~/Documents/
 
 # Clone the repository
-git clone https://github.com/yourusername/obsidian-claude-workflow.git
+git clone https://github.com/alassetter/obsidian-claude-workflow.git
 
 # Navigate into the vault
 cd obsidian-claude-workflow
