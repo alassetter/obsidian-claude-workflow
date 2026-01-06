@@ -1,0 +1,112 @@
+# Obsidian + Claude Workflow - Git Ignore
+# Keeps personal data private while sharing structure
+
+# ============================================
+# PERSONAL DATA - NEVER COMMIT
+# ============================================
+
+# Personal notes folder
+07_Personal/
+
+# Active work - tasks and planning
+01_Clients/*/Tasks/*.md
+01_Clients/*/Planning/*.md
+01_Clients/*/Documentation/*.md
+02_Company_*/Tasks/*.md
+02_Company_*/Planning/*.md
+02_Company_*/Documentation/*.md
+03_Company_*/Tasks/*.md
+03_Company_*/Planning/*.md
+03_Company_*/Documentation/*.md
+04_Development/Tasks/*.md
+04_Development/Planning/*.md
+
+# Planning inbox (contains your brain dumps)
+09_Planning/inbox.md
+09_Planning/*-checkpoint.md
+
+# Keep README files (they're documentation)
+!**/README.md
+
+# ============================================
+# OBSIDIAN WORKSPACE - PERSONAL LAYOUT
+# ============================================
+
+# Workspace layout (your window arrangement)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Plugin data (may contain personal settings)
+.obsidian/plugins/*/data.json
+
+# Cache files
+.obsidian/cache
+
+# ============================================
+# SYSTEM FILES
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================
+# BACKUP & TEMP FILES
+# ============================================
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+# Obsidian sync conflict files
+*.sync-conflict-*
+
+# ============================================
+# IDE & EDITOR
+# ============================================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# ============================================
+# NODE & PYTHON (if using scripts)
+# ============================================
+
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.local
+
+# ============================================
+# WHAT GETS COMMITTED (FOR REFERENCE)
+# ============================================
+
+# ✅ Folder structure (empty folders via README.md)
+# ✅ Templates (00_System/Templates/)
+# ✅ Documentation (Setup, Quick Reference, etc.)
+# ✅ Prompts (05_Prompts/)
+# ✅ System files (conventions, guidelines)
+# ✅ README files in each folder
+# ✅ .gitignore (this file)
+# ✅ LICENSE
+# ✅ Root README.md, SETUP.md, PLUGINS.md
